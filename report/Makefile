@@ -1,4 +1,4 @@
-PDFFILES = report-guidelines.pdf
+PDFFILES = report.pdf
 
 all: $(PDFFILES) 
 
