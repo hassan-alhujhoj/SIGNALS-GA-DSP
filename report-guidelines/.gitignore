@@ -1,0 +1,38 @@
+m# Swap / temporary files for vi and emacs.
+*.swp
+*~
+*#
+.#*
+\#*
+*.bak
+
+# Compiled Python files.
+*.pyc
+*.pyo
+
+# LaTeX intermediate files.
+*.aux
+*.bbl
+*.idx
+*.ind
+*.lof
+*.toc
+*.out
+*.log
+*.blg
+*.ilg
+*.dvi
+*.fig
+
+# Binary files generated during build.
+*.o
+*.d
+*.bin
+*.map
+
+*.old
+
+*.1
+*.mpx
+*.t
+*.i

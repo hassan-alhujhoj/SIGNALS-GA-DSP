@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{tabularx}
+
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-14mm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\marginparsep}{0cm}
+\setlength{\topmargin}{2mm}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0cm}
+\setlength{\textheight}{240mm}
+\setlength{\textwidth}{168mm}
+\setlength{\topskip}{0mm}
+\setlength{\footskip}{10mm}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\refsec}[1]{\mbox{Section~\ref{sec:#1}}}
+\newcommand{\refapp}[1]{\mbox{Appendix~\ref{sec:#1}}}
+\newcommand{\refeqn}[1]{\mbox{(\ref{eqn:#1})}}
+\newcommand{\reffig}[1]{\mbox{Figure~\ref{fig:#1}}}
+\newcommand{\ud}{\mathrm{d}}                    % upright d (derivative)
+
+\newcounter{foo}
+\newcounter{bar}
+
+\bibliographystyle{IEEEtran}
+\renewcommand{\bibname}{References}
+\renewcommand{\bibsection}{\section{\bibname}}
+\renewcommand{\cite}{\citep}
+
+
+\title{\vspace{-1cm} ENCE464 Group Assignment 2}
+\author{Luke Trenberth - 47277086 \\ Hassan Alhujhoj-  35352633\\
+	\small Department of Electrical and Computer Engineering University of Canterbury}
+\date{\today}
+
+    \begin{document}
+     \title{}
+    \maketitle
+    \begin{abstract}
+Abstract.
+    \end{abstract}
+
+     \bibliographystyle{IEEEtran}
+    \bibliography{refs}
+    \end{document}
+
+\end{document}
+
