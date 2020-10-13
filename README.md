@@ -7,15 +7,18 @@ This is an code that uses the concept of Darwin's throery of natural selection. 
 to filter an noisy ECG singal that has two fundamental interfernce frequencies using the fitness of the generated frequency
 population. The ECG is filtered by either an FIR or IIR filter. A SNR is then optained to determine the fitness of the population.
 
-#### Rejection Frequencies
-<mark>f(1) = 31.456 Hz</mark>
-<mark>f(2) = 74.36 Hz</mark>
+require 'simplabs/highlight'
+Simplabs::Highlight.highlight(:ruby, 'class Test; end')
 
-#### GA Operators
+### Rejection Frequencies
+* f(1) = 31.456 Hz
+* f(2) = 74.36 Hz
+
+### GA Operators
 1. Crossover
 2. Mutation
 
-#### FIR Filters
+### FIR Filters
 I. Window Function  
 II. Parks Mc  
 
