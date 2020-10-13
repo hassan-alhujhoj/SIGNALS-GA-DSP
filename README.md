@@ -1,6 +1,6 @@
 # ENEL420 - Genetic Algorithm for Digital Signal Processing
-<img src="doc/wiki/10kGen.png" alt="fig1" width="1200"/>
 <img src="doc/wiki/bf_filtering_10kGen.png" alt="fig2" width="1200"/>
+<img src="doc/wiki/10kGen.png" alt="fig1" width="1200"/>
 <img src="doc/wiki/af_filtering_100Gen.png" alt="fig3" width="1200"/>
 
 ## Description
