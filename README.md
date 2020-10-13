@@ -1,7 +1,7 @@
 # ENEL420 - Genetic Algorithm for Digital Signal Processing
 <img src="doc/wiki/10kGen.png" alt="fig1" width="600"/>
 <img src="doc/wiki/bf_filtering_10kGen.png" alt="fig2" width="600"/>
-<img src="doc/wiki/bf_filtering_100Gen50Pop.png" alt="fig3" width="600"/>
+<img src="doc/wiki/af_filtering_100Gen.png" alt="fig3" width="600"/>
 
 ## Description
 This is an code that uses the concept of Darwin's throery of natural selection. The code uses genetic algorithm 
