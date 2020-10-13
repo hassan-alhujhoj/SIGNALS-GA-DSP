@@ -9,7 +9,7 @@ to filter an noisy ECG singal that has two fundamental interfernce frequencies u
 population. The ECG is filtered by either an FIR or IIR filter. A SNR is then optained to determine the fitness of the population.
 
 ### Rejection Frequencies
-- `f(1) = 31.456` ````
+- `f(1) = 31.456`
 - `f(2) = 74.36 Hz`
 
 ### GA Operators
