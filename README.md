@@ -16,8 +16,8 @@ population. The ECG is filtered by either an FIR or IIR filter. A SNR is then op
 2. Mutation
 
 #### FIR Filters
-    I. Window Function  
-    II. Parks Mc  
+I. Window Function  
+II. Parks Mc  
 
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
