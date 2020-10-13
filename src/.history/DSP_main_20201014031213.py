@@ -141,7 +141,7 @@ def main():
     f_count = 2
     mating_parent_number = 3
     pop_size = 50
-    num_generations = 250
+    num_generations = 100
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
@@ -150,7 +150,7 @@ def main():
     print("Best solution : \n", best_soln)
     print("Best solution fitness : \n", best_soln_fitness)
     plt.figure()
-    plt.plot(best_outputs, "-c", label="Fittest Output")
+    plt.plot(best_outputs, "-b", label="Fittest Output")
     plt.title("Fitness of ECG Signal using GA Algorithm")
     plt.xlabel("Number of Iterations")
     plt.ylabel("Fitness (Signal to Noise Ratio)")

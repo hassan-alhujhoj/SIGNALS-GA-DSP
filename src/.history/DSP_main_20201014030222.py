@@ -140,8 +140,8 @@ def main():
     # Fixed Parameters, found by trial and error s
     f_count = 2
     mating_parent_number = 3
-    pop_size = 50
-    num_generations = 250
+    pop_size = 10
+    num_generations = 100
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 

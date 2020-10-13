@@ -2,11 +2,8 @@
 Genetic Algorithms for Digital Signal Processing
 Created on Mon Oct 05 20:01:05 2020
 Last Edited on  Mon Oct 12 2020 by Luke Trenberth
-TODO tidy up this code and to finalise it. Add up the third FIR filter method in here too.
 """
-from os import major
 import numpy as np
-import matplotlib
 from scipy import signal
 from scipy.fftpack import fft
 import matplotlib.pyplot as plt
@@ -137,27 +134,25 @@ def GA_filter(waveform, input_num, solutions_per_population, mating_parent_numbe
 def main():
     waveform = DSP_Signal("Signal_files/enel420_grp_15.txt")
     
-    # Fixed Parameters, found by trial and error s
-    f_count = 2
+    # Fixed Parameters, found by trial and error
+    input_num = 2
     mating_parent_number = 3
-    pop_size = 50
-    num_generations = 250
+    pop_size = 10
+    num_generations = 1000
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
-                                                           f_count, pop_size, 
+                                                           input_num, pop_size, 
                                                            mating_parent_number, num_generations)    
     print("Best solution : \n", best_soln)
     print("Best solution fitness : \n", best_soln_fitness)
     plt.figure()
-    plt.plot(best_outputs, "-c", label="Fittest Output")
-    plt.title("Fitness of ECG Signal using GA Algorithm")
+    plt.plot(best_outputs)
     plt.xlabel("Number of Iterations")
     plt.ylabel("Fitness (Signal to Noise Ratio)")
-    plt.legend(loc="upper right")
-    plt.grid()
     plt.show()
-
+    plt.
+    
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")
     waveform.PM(best_soln[0])
     waveform.FFTplot(waveform.f, waveform.FFT_PM, title="After Filtering")

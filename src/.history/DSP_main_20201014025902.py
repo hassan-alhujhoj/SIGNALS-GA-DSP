@@ -140,7 +140,7 @@ def main():
     # Fixed Parameters, found by trial and error s
     f_count = 2
     mating_parent_number = 3
-    pop_size = 50
+    pop_size = 10
     num_generations = 250
     
     # Conduct a Genetic Algorithm approximation
