@@ -74,4 +74,125 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/textalpha.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/textalpha.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.pdf
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta-lgr.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta-lgr.def
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
+INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.bbl
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.bbl
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
