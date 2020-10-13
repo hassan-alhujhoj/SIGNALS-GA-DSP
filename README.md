@@ -10,7 +10,7 @@ population. The ECG is filtered by either an FIR or IIR filter. A SNR is then op
 #### Rejection Frequencies
 * <mark>f(1) = 31.456 Hz</mark>
 * <mark>f(2) = 74.36 Hz</mark>
-</mark>
+
 #### GA Operators
 1. Crossover
 2. Mutation
