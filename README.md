@@ -2,4 +2,4 @@
 
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
-* [Luke Trenberth](https://eng-git.canterbury.ac.nz/tlr28)
+* [Luke Trenberth](https://eng-git.canterbury.ac.nz/ltr28)
