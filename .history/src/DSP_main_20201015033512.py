@@ -72,25 +72,12 @@ class DSP_Signal():
         self.FFT_PM = fft(self.y_PM) # Filtered data frequency domain response
         return self.SNR(self.y_PM)
         
-    # TODO Frequency Sampling Filtering Method. THIS IS COPIED FROM ASSIGNMENT I.
-    def FS(self):
-        trans_FS = 4    # Width of transition from pass band to stop band, Hz
-        width_FS = 8    # Width of the stop band, Hz
-        band1_FS = [0, noise_f[0] -width_FS/2-trans_FS, noise_f[0] -width_FS/2, noise_f[0]+width_FS/2, noise_f[0]+width_FS/2+trans_FS, fs/2]
-        band2_FS = [0, noise_f[1] -width_FS/2-trans_FS, noise_f[1] -width_FS/2, noise_f[1]+width_FS/2, noise_f[1]+width_FS/2+trans_FS, fs/2]
-        gain_FS = [1, 1, 0, 0, 1, 1] # Gain coefficients of bands
-
-        filter1_FS = signal.firwin2(N_Coeff+1, band1_FS, gain_FS, fs=fs) # Filter for noise frequency 1
-        filter2_FS = signal.firwin2(N_Coeff+1, band2_FS, gain_FS, fs=fs) # Filter for noise frequency 2
-        filter_FS = signal.convolve(filter1_FS, filter2_FS) # Filter for both noise frequencies
-
-        y_FS = signal.lfilter(filter_FS, 1, y_0) # Apply filter to time domain data
-        f_FS, h_FS = signal.freqz(filter_FS, 1, fs=fs) # Filter Response
-        FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
-
+    # Frequency Sampling Filtering Method
+    def 
     #Returns a Signal to Noise Ratio for a given input Power
     def SNR (self, y):
         return self.P_0  - np.var(y)
+    
     
     # Plots a Fast Fourier Transform for simple graphing
     def FFTplot(self, f, FFT, title="ECG Signal Frequency Spectrum"):

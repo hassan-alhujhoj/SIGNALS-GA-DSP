@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1602684958 "report.aux" "report.bbl" "report" 1602684961
+["bibtex report"] 1602684958 "report.aux" "report.bbl" "report" 1602685014
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "ref.bib" 1602684110 5503 286686dd262fd14b421f05848ca24909 ""
   "report.aux" 1602684960 6917 3f3aaf8a8ab4099483d657e7aaa211b7 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
-["pdflatex"] 1602684959 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602684961
+["pdflatex"] 1602684959 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602685014
   "./wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "./wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   "./wiki/fig.png" 1602545210 504845 5f47fae445507d23433e6150a70ce35e ""
@@ -124,10 +124,10 @@
   "wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   "wiki/fig.png" 1602545210 504845 5f47fae445507d23433e6150a70ce35e ""
   (generated)
-  "report.toc"
-  "report.pdf"
-  "report.out"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
-  "report.log"
   "report.aux"
+  "report.log"
+  "report.pdf"
+  "report.toc"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
+  "report.out"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"

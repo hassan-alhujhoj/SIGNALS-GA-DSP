@@ -87,10 +87,10 @@ class DSP_Signal():
         y_FS = signal.lfilter(filter_FS, 1, y_0) # Apply filter to time domain data
         f_FS, h_FS = signal.freqz(filter_FS, 1, fs=fs) # Filter Response
         FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
-
     #Returns a Signal to Noise Ratio for a given input Power
     def SNR (self, y):
         return self.P_0  - np.var(y)
+    
     
     # Plots a Fast Fourier Transform for simple graphing
     def FFTplot(self, f, FFT, title="ECG Signal Frequency Spectrum"):
