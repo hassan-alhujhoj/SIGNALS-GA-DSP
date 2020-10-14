@@ -25,6 +25,15 @@
   location        = {London, UK},
 }
 
+@InProceedings{Man1997,
+  author    = {K. F. {Man} and K. S. {Tang}},
+  booktitle = {Proceedings of the IECON'97 23rd International Conference on Industrial Electronics, Control, and Instrumentation (Cat. No.97CH36066)},
+  title     = {Genetic algorithms for control and signal processing},
+  year      = {1997},
+  pages     = {1541-1555 vol.4},
+  volume    = {4},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: fileDirectoryLatex-hassan99-Hassans-MacBook-Pro.local:/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report;}
