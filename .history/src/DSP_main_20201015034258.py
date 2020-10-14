@@ -88,8 +88,7 @@ class DSP_Signal():
         f_FS, h_FS = signal.freqz(filter_FS, 1, fs=fs) # Filter Response
         FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
     
-    # TODO maybe add IIR filtering method in here but that might be to much. Don't know tho.
-    def IIR(self):
+    # TODO maybe add 
 
     #Returns a Signal to Noise Ratio for a given input Power
     def SNR (self, y):
