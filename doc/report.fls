@@ -1,9 +1,9 @@
-PWD /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report
+PWD /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.tex
-OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.log
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
@@ -116,9 +116,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
-OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -129,14 +129,14 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.pdf
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta-lgr.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/alphabeta-lgr.def
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -157,10 +157,11 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.toc
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -179,17 +180,16 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.toc
-INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/./wiki/fig1.png
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.bbl
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.bbl
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.aux
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
-INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/enel420---genetic-algorithm-for-signal-processing/report/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/fig1.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.bbl
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.bbl
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.out
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
