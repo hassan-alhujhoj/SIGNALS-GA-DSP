@@ -114,8 +114,18 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.d
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
 OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
