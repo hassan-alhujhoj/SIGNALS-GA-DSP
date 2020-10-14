@@ -89,16 +89,8 @@
     \\\\
     There are two fundamental operators that facilitate the evolution cycle: Crossover and Mutation. Both operators 
     are required for such a process even though the selection routine. To further illustrate the crossover procedure, 
-    the one-point crossover mechanism is shown in Figure \ref{Fig:crossover}. Genes are exchanged between parents to form 
-    offspring. Mutations are randomly generated after crossover with a small probability of occurrence.
-    
-    \begin{figure}[h!]
-        \centering
-        \graphicspath{{./wiki/}}
-        \includegraphics[scale=0.7]{crossover.png}
-        \caption{Interference frequencies present in the ECG signal.}
-        \label{Fig:crossover}
-    \end{figure}
+    the one-point crossover mechanism is shown in Figure \ref{Fig:fig1}. Genes are exchanged between parents to form offspring. 
+    Mutations are randomly generated after crossover with a small probability of occurrence.
 
 \section{Background}\label{sec:bg}
     \subsection{Digital Signal Processing of ECG Signals}\label{sec:bg_sub1}
@@ -107,18 +99,20 @@
         An FIR or IIR notch filter was suited to filter this ECG signal since there were a clear two 
         interference frequencies present within the frequency spectrum of the ECG signal.
         These interference frequencies were identified to be $f_{1} = 31.456Hz$ and $f_{2} = 74.36Hz$
-        as shown in Figure \ref{Fig:rejFreq}. It should be noted that the first peak in Figure \ref{Fig:rejFreq} is the 
+        as shown in Figure \ref{Fig:fig1}. It should be noted that the first peak in Figure \ref{Fig:fig1} is the 
         DC component due to the use FFT to get the frequency response of the time domain ECG signal.
         
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
-            \includegraphics[scale=0.4]{bf_filtering_10kGen.png}
+            \includegraphics[scale=0.6]{fig1.png}
             \caption{Interference frequencies present in the ECG signal.}
-            \label{Fig:rejFreq}
+            \label{Fig:rejFreq
         \end{figure}
 
         One method to filter these two frequencies was to reject them with either a window or Parks-McClellan filters.
+
+        
         
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
         Plz write something here.
