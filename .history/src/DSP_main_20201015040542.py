@@ -73,7 +73,7 @@ class DSP_Signal():
         return self.SNR(self.y_PM)
         
     # TODO Frequency Sampling Filtering Method. THIS IS COPIED FROM ASSIGNMENT I.
-    def FS(self, fs):
+    def FS(self):
         trans_FS = 4    # Width of transition from pass band to stop band, Hz
         width_FS = 8    # Width of the stop band, Hz
         band1_FS = [0, noise_f[0] -width_FS/2-trans_FS, noise_f[0] -width_FS/2, noise_f[0]+width_FS/2, noise_f[0]+width_FS/2+trans_FS, fs/2]
@@ -87,49 +87,50 @@ class DSP_Signal():
         y_FS = signal.lfilter(filter_FS, 1, y_0) # Apply filter to time domain data
         f_FS, h_FS = signal.freqz(filter_FS, 1, fs=fs) # Filter Response
         FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
-        return 0
+        return self.f
     
     # TODO maybe add IIR filtering method in here but that might be to much. Don't know tho.
-    def IIR(self, fs):
+    def IIR(self):
         # The undesired frequencies and desired bandwidth of
         freq1 = 31.456
         freq2 = 74.36
         BW = 5
 
-        deg1 = 2* np.pi * (freq1 / fs)
-        deg2 = 2* np.pi * (freq2 / fs)
-        r = 1 - (BW / fs) * np.pi
+        deg1 = 2*npi * (freq1 / fs)
+        deg2 = 2*pi * (freq2 / fs)
+        r = 1 - (BW / fs) * pi
 
         # Assign the coefficients for first and second filters
         a = 1 * 1
-        b = (1 * -np.exp(-deg1 * np.pi)) + (1 * -np.exp(deg1 * np.pi))
-        c = (1 * -np.exp(-deg1 * np.pi)) * (1 * -np.exp(deg1 * np.pi))
+        b = (1*-exp(-deg1*1i)) + (1*-exp(deg1*1i))
+        c = (1*-exp(-deg1*1i)) * (1*-exp(deg1*1i))
 
-        d = 1 * 1
-        e = (-r * np.exp(-deg1 * np.pi)) + (-r * np.exp(deg1 * np.pi))
-        f = (-r *  np.exp(-deg1 * np.pi)) * (-r * np.exp(deg1 * np.pi))
+        d = 1 * 1;
+        e = (-r*exp(-deg1*1i)) + (-r*exp(deg1*1i))
+        f = (-r*exp(-deg1*1i)) * (-r*exp(deg1*1i))
 
-        g = 1 * 1
-        h = (-1 * np.exp(-deg2 * np.pi)) + (-1 * np.exp(deg2 * np.pi))
-        ii = (-1 * np.exp(-deg2 * np.pi)) * (-1 * np.exp(deg2 * np.pi))
+        g = 1 * 1;
+        h = (-1*exp(-deg2*1i)) + (-1*exp(deg2*1i))
+        ii = (-1*exp(-deg2*1i)) * (-1*exp(deg2*1i))
 
-        j = 1 * 1
-        k = (-r * np.exp(-deg2 * np.pi)) + (-r * np.exp(deg2 * np.pi))
-        l = -r * np.exp(-deg2 * np.pi) * -r * np.exp(deg2 * np.pi)
+        j = 1 * 1;
+        k = (-r*exp(-deg2*1i)) + (-r*exp(deg2*1i))
+        l = -r*exp(-deg2*1i) * -r*exp(deg2*1i)
 
         # Calculte the gain of the overall transfer function
-        Wf = 2 * np.pi * 10
-        ND_array = [np.exp(0), np.exp(np.i * Wf), np.exp(-2 * Wf)]
-        H_Z1_dot = np.dot(ND_array,[a, b, c])
-        H_Z2_dot = np.dot(ND_array, [d, e, f])
+        Wf = 2 * pi *10;
+        ND_array = [exp(0), exp(1i*Wf), exp(-2*Wf)]
+        H_Z1_dot = dot(ND_array,[a b c])
+        H_Z2_dot = dot(ND_array, [d e f])
         Gain = abs(H_Z2_dot / H_Z1_dot)
 
         # convlute the the de/numerator of the first transfer function with de/numerator of the second funcion
-        NUM_Z = np.conv([a, b, c], [g, h, ii])
-        DEN_Z = np.conv([d, e, f], [j, k, l])
+        NUM_Z = conv([a b c], [g h ii])
+        DEN_Z = conv([d e f], [j k l])
 
-        [H, F] = np.freqz(Gain * NUM_Z, DEN_Z, self.N, fs)
-        return 0
+
+        [H, F] = freqz(Gain*NUM_Z, DEN_Z, N, fs)
+        return self.f
 
     #Returns a Signal to Noise Ratio for a given input Power
     def SNR (self, y):

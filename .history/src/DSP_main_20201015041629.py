@@ -73,7 +73,7 @@ class DSP_Signal():
         return self.SNR(self.y_PM)
         
     # TODO Frequency Sampling Filtering Method. THIS IS COPIED FROM ASSIGNMENT I.
-    def FS(self, fs):
+    def FS(self):
         trans_FS = 4    # Width of transition from pass band to stop band, Hz
         width_FS = 8    # Width of the stop band, Hz
         band1_FS = [0, noise_f[0] -width_FS/2-trans_FS, noise_f[0] -width_FS/2, noise_f[0]+width_FS/2, noise_f[0]+width_FS/2+trans_FS, fs/2]

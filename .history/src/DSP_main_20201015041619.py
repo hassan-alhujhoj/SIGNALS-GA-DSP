@@ -73,7 +73,7 @@ class DSP_Signal():
         return self.SNR(self.y_PM)
         
     # TODO Frequency Sampling Filtering Method. THIS IS COPIED FROM ASSIGNMENT I.
-    def FS(self, fs):
+    def FS(self):
         trans_FS = 4    # Width of transition from pass band to stop band, Hz
         width_FS = 8    # Width of the stop band, Hz
         band1_FS = [0, noise_f[0] -width_FS/2-trans_FS, noise_f[0] -width_FS/2, noise_f[0]+width_FS/2, noise_f[0]+width_FS/2+trans_FS, fs/2]
@@ -125,8 +125,9 @@ class DSP_Signal():
         Gain = abs(H_Z2_dot / H_Z1_dot)
 
         # convlute the the de/numerator of the first transfer function with de/numerator of the second funcion
-        NUM_Z = np.conv([a, b, c], [g, h, ii])
-        DEN_Z = np.conv([d, e, f], [j, k, l])
+        NUM_Z = np.conv([a, b, c], [g h ii])
+        DEN_Z = np.conv([d, e, f], [j k l])
+
 
         [H, F] = np.freqz(Gain * NUM_Z, DEN_Z, self.N, fs)
         return 0
