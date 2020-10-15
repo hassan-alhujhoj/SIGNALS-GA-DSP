@@ -120,8 +120,6 @@
         \end{figure}
 
         One method to filter these two frequencies was to reject them with either a window or Parks-McClellan filters.
-        \subsection{ECG Signals}
-
 
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
         ffs
@@ -129,7 +127,7 @@
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
-            \includegraphics[scale=0.9]{GA_cycle.png}
+            \includegraphics[scale=0.8]{GA_cycle.png}
             \caption{Genetic Algorithms cycle. Adapted from \cite{Tang1996}}
             \label{Fig:GA_cycle}
         \end{figure}
@@ -144,7 +142,9 @@
             local or global. Mutation can occur some occasionally but can randomly alters the value of a string
             position. A randomly generated bit can replace any bit of the chromosome bitstring mutating the original
             bit sequence of the parents \cite{Tang1996}.
-        \subsubsection{Paranets}
+        \subsubsection{Parentss}
+
+        \subsection{Applications}
         
 
 \section{Method}\label{sec:meth}
@@ -183,6 +183,8 @@
         Signals with higher SNR's were considered more optimal filtering. Due to this, the signal to noise ratio of the
         signal was determined to be an appropriate measure of the sample's fitness. 
 
+        \begin{equation} SNR = var(y_0) - var(y)\end{equation}
+
     \subsection{Population Selection}\label{sec:meth_sub3}
         Parent chromosomes were chosen by taking the chromosomes with the largest fitness scores in the previous generation. 
         Chromosomes with the largest fitness scores have the most successful genes and were incorporated into the
@@ -207,9 +209,21 @@
 
 
 \section{Results}\label{sec:res}
+
+    \begin{figure}[h!]
+        \centering
+        \graphicspath{{./wiki/}}
+        \includegraphics[scale=1]{Flowchart.png}
+        \caption{Flowchart diagram of GA of ECG signals.}
+        \label{Fig:flowchart}
+    \end{figure}
+    
+    When the Genetic Algorithm was run, the algorithm was able to identify the optimal filter frequencies for maximum SNR.
+    With the filter  population size of $p_size = 20$, and a maximum number of iterations of $n = 100$, a filtered output
+    was produced. As seen in Figure 1\ref{fig:result_1}
     Describe\ae the results you've got. Don't give your opinion in here that goes in the Discussion.
     Unless combine the Results and Discussion sections \begin{equation} V = IR\end{equation}
-
+    
     \subsection{Creating a Population from DSP Singal Data}\label{sec:meth_sub1}
     Plz write something here.
     \subsection{Fitness Function}\label{sec:meth_sub2}
