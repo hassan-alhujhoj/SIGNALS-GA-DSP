@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1602779261 "report.aux" "report.bbl" "report" 1602779263
+["bibtex report"] 1602779261 "report.aux" "report.bbl" "report" 1602779562
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "ref.bib" 1602771696 7421 4ff4710a57ceb85f3a211a544df87174 ""
   "report.aux" 1602779263 7469 00eb6193076af83e45ffeefed15fdbd5 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
-["pdflatex"] 1602779262 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602779263
+["pdflatex"] 1602779262 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602779562
   "./wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "./wiki/Flowchart.png" 1602769396 39148 eef3dd0680676569f20d73b38b71007a ""
   "./wiki/GA_cycle.png" 1602778861 52208 e5f24340679b48d556fa8b510a7ffcc4 ""
@@ -128,10 +128,10 @@
   "wiki/GA_cycle.png" 1602778861 52208 e5f24340679b48d556fa8b510a7ffcc4 ""
   "wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   (generated)
+  "report.aux"
   "report.out"
+  "report.toc"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
+  "report.log"
   "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
   "report.pdf"
-  "report.log"
-  "report.toc"
-  "report.aux"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
