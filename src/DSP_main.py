@@ -4,7 +4,6 @@ Created on Mon Oct 05 20:01:05 2020
 Last Edited on  Mon Oct 12 2020 by Luke Trenberth
 TODO tidy up this code and to finalise it. Add up the third FIR filter method in here too.
 """
-from os import major
 import numpy as np
 import matplotlib
 from scipy import signal
@@ -73,21 +72,18 @@ class DSP_Signal():
         return self.SNR(self.y_PM)
         
     # TODO Frequency Sampling Filtering Method. THIS IS COPIED FROM ASSIGNMENT I.
-    def FS(self, fs):
-        trans_FS = 4    # Width of transition from pass band to stop band, Hz
-        width_FS = 8    # Width of the stop band, Hz
-        band1_FS = [0, noise_f[0] -width_FS/2-trans_FS, noise_f[0] -width_FS/2, noise_f[0]+width_FS/2, noise_f[0]+width_FS/2+trans_FS, fs/2]
-        band2_FS = [0, noise_f[1] -width_FS/2-trans_FS, noise_f[1] -width_FS/2, noise_f[1]+width_FS/2, noise_f[1]+width_FS/2+trans_FS, fs/2]
-        gain_FS = [1, 1, 0, 0, 1, 1] # Gain coefficients of bands
+    def FS(self, f_inter, TB=4, BW=8):
+        band1 = [0, f_inter[0] -BW/2-TB, f_inter[0] -BW/2, f_inter[0]+BW/2, f_inter[0]+BW/2+TB, self.fs/2]
+        band2 = [0, f_inter[1] -BW/2-TB, f_inter[1] -BW/2, f_inter[1]+BW/2, f_inter[1]+BW/2+TB, self.fs/2]
+        gain = [1, 1, 0, 0, 1, 1] # Gain coefficients of bands
 
-        filter1_FS = signal.firwin2(N_Coeff+1, band1_FS, gain_FS, fs=self.fs) # Filter for noise frequency 1
-        filter2_FS = signal.firwin2(N_Coeff+1, band2_FS, gain_FS, fs=self.fs) # Filter for noise frequency 2
-        filter_FS = signal.convolve(filter1_FS, filter2_FS) # Filter for both noise frequencies
+        filter1 = signal.firwin2(self.N_Coeff+1, band1, gain, fs=self.fs) # Filter for noise frequency 1
+        filter2 = signal.firwin2(self.N_Coeff+1, band2, gain, fs=self.fs) # Filter for noise frequency 2
+        filter = signal.convolve(filter1, filter2) # Filter for both noise frequencies
 
-        y_FS = signal.lfilter(filter_FS, 1, self.y_0) # Apply filter to time domain data
-        f_FS, h_FS = signal.freqz(filter_FS, 1, fs=fs) # Filter Response
-        FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
-        return 0
+        y_FS = signal.lfilter(filter, 1, self.y_0) # Apply filter to time domain data
+        self.f_FS, self.h_FS = signal.freqz(filter, 1, fs=self.fs) # Filter Response
+        self.FFT_FS = fft(y_FS) # Filtered Frequency Domain Response
     
     # TODO maybe add IIR filtering method in here but that might be to much. Don't know tho.
     def IIR(self, freq1=31.456, freq2=74.36, BW=5):
