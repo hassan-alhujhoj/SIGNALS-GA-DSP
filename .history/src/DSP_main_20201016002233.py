@@ -115,7 +115,7 @@ class DSP_Signal():
 
         # Calculte the gain of the overall transfer function
         Wf = 2 * np.pi * 10
-        ND_array = [np.exp(0), np.exp(1j * Wf), np.exp(-2 * Wf)]
+        ND_array = [np.exp(0), np.exp(np.i * Wf), np.exp(-2 * Wf)]
         H_Z1_dot = np.dot(ND_array,[a, b, c])
         H_Z2_dot = np.dot(ND_array, [d, e, f])
         Gain = abs(H_Z2_dot / H_Z1_dot)
@@ -138,28 +138,27 @@ class DSP_Signal():
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Voltage (uV)")
         plt.title(title)
-        plt.grid()
         plt.show()
         
     def IIRplot(self, dpi=200):
-        plt.figure(2, dpi=dpi)
+        plt.figure(2, figsize=(5, 10), dpi=dpi)
         plt.plot(self.IIR_f, abs(self.IIR_H), "-g", label="IIR Filter")
         plt.title("IIR Filter")
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Magnitude (uV)")
         plt.legend(loc="upper right")
         plt.grid()
-        plt.savefig('src/wiki/IIR_magnitude.png', dpi=dpi)
+        plt.savefig('wiki/IIR_magnitude.png', dpi=dpi)
         plt.show()
 
-        plt.figure(3, dpi=dpi)
+        plt.figure(3, figsize=(5, 10), dpi=dpi)
         plt.plot(self.IIR_f, np.angle(self.IIR_H), "-g", label="IIR Filter")
         plt.title("IIR Filter")
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Angle (Rad)")
         plt.legend(loc="upper right")
         plt.grid()
-        plt.savefig('src/wiki/IIR_angle.png', dpi=dpi)
+        plt.savefig('wiki/IIR_angle.png', dpi=dpi)
         plt.show()
         
 
@@ -229,9 +228,9 @@ def main():
     plt.ylabel("Fitness (Signal to Noise Ratio)")
     plt.legend(loc="upper right")
     plt.grid()
-    plt.savefig('src/wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
+    plt.savefig('srcwiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
     plt.show()
-    waveform.IIR(best_outputs[0], best_outputs[1])
+
     waveform.IIRplot()
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")
     waveform.PM(best_soln[0])

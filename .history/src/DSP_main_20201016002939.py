@@ -138,7 +138,6 @@ class DSP_Signal():
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Voltage (uV)")
         plt.title(title)
-        plt.grid()
         plt.show()
         
     def IIRplot(self, dpi=200):

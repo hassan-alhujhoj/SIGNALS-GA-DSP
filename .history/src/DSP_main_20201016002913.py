@@ -138,11 +138,10 @@ class DSP_Signal():
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Voltage (uV)")
         plt.title(title)
-        plt.grid()
         plt.show()
         
     def IIRplot(self, dpi=200):
-        plt.figure(2, dpi=dpi)
+        plt.figure(2, figsize=(1, ), dpi=dpi)
         plt.plot(self.IIR_f, abs(self.IIR_H), "-g", label="IIR Filter")
         plt.title("IIR Filter")
         plt.xlabel("Frequency (Hz)")
@@ -152,7 +151,7 @@ class DSP_Signal():
         plt.savefig('src/wiki/IIR_magnitude.png', dpi=dpi)
         plt.show()
 
-        plt.figure(3, dpi=dpi)
+        plt.figure(3, figsize=(5, 10), dpi=dpi)
         plt.plot(self.IIR_f, np.angle(self.IIR_H), "-g", label="IIR Filter")
         plt.title("IIR Filter")
         plt.xlabel("Frequency (Hz)")

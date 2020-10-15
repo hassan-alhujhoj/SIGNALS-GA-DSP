@@ -90,7 +90,11 @@ class DSP_Signal():
         return 0
     
     # TODO maybe add IIR filtering method in here but that might be to much. Don't know tho.
-    def IIR(self, freq1=31.456, freq2=74.36, BW=5):
+    def IIR(self, freq1=31.456, freq2):
+        # The undesired frequencies and desired bandwidth of
+        freq1 = 31.456
+        freq2 = 74.36
+        BW = 5
 
         deg1 = 2 * np.pi * (freq1 / self.fs)
         deg2 = 2 * np.pi * (freq2 / self.fs)
@@ -115,7 +119,7 @@ class DSP_Signal():
 
         # Calculte the gain of the overall transfer function
         Wf = 2 * np.pi * 10
-        ND_array = [np.exp(0), np.exp(1j * Wf), np.exp(-2 * Wf)]
+        ND_array = [np.exp(0), np.exp(np.i * Wf), np.exp(-2 * Wf)]
         H_Z1_dot = np.dot(ND_array,[a, b, c])
         H_Z2_dot = np.dot(ND_array, [d, e, f])
         Gain = abs(H_Z2_dot / H_Z1_dot)
@@ -124,8 +128,9 @@ class DSP_Signal():
         NUM_Z = np.array( np.convolve( [a, b, c], [g, h, ii] ) )
         DEN_Z = np.array( np.convolve( [d, e, f], [j, k, l] ) )
 
-        self.IIR_w, self.IIR_H = signal.freqz(Gain * NUM_Z, DEN_Z, self.N)
-        self.IIR_f = self.fs * self.IIR_w / (2 * np.pi)
+        w, H = signal.freqz(Gain * NUM_Z, DEN_Z, self.N)
+        f = self.fs * w / (2 * np.pi)
+        return 0
 
     #Returns a Signal to Noise Ratio for a given input Power
     def SNR (self, y):
@@ -138,28 +143,6 @@ class DSP_Signal():
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Voltage (uV)")
         plt.title(title)
-        plt.grid()
-        plt.show()
-        
-    def IIRplot(self, dpi=200):
-        plt.figure(2, dpi=dpi)
-        plt.plot(self.IIR_f, abs(self.IIR_H), "-g", label="IIR Filter")
-        plt.title("IIR Filter")
-        plt.xlabel("Frequency (Hz)")
-        plt.ylabel("Magnitude (uV)")
-        plt.legend(loc="upper right")
-        plt.grid()
-        plt.savefig('src/wiki/IIR_magnitude.png', dpi=dpi)
-        plt.show()
-
-        plt.figure(3, dpi=dpi)
-        plt.plot(self.IIR_f, np.angle(self.IIR_H), "-g", label="IIR Filter")
-        plt.title("IIR Filter")
-        plt.xlabel("Frequency (Hz)")
-        plt.ylabel("Angle (Rad)")
-        plt.legend(loc="upper right")
-        plt.grid()
-        plt.savefig('src/wiki/IIR_angle.png', dpi=dpi)
         plt.show()
         
 
@@ -206,7 +189,7 @@ def GA_filter(waveform, input_num, solutions_per_population, mating_parent_numbe
 
 # Implementation of a Parks-McLellan Filter using Genetic Algorithms
 def main():
-    waveform = DSP_Signal("src/Signal_files/ECG15.txt")
+    waveform = DSP_Signal("Signal_files/ECG15.txt")
     
     # Fixed Parameters, found by trial and error s
     f_count = 2
@@ -221,7 +204,6 @@ def main():
                                                            mating_parent_number, num_generations)    
     print("Best solution : \n", best_soln)
     print("Best solution fitness : \n", best_soln_fitness)
-
     plt.figure(1)
     plt.plot(best_outputs, "-k", label="Fittest Output")
     plt.title("Fitness of ECG Signal using GA Algorithm")
@@ -229,10 +211,19 @@ def main():
     plt.ylabel("Fitness (Signal to Noise Ratio)")
     plt.legend(loc="upper right")
     plt.grid()
-    plt.savefig('src/wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
     plt.show()
-    waveform.IIR(best_outputs[0], best_outputs[1])
-    waveform.IIRplot()
+    # plt.savefig('wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
+
+    plt.figure(2, figsize=(5, 10), dpi=my_dpi)
+    plt.plot(best_outputs, "-g", label="IIR Filter")
+    plt.title("IIR Filter")
+    plt.xlabel("Frequency (Hz)")
+    plt.ylabel("Magnitude (uV)")
+    plt.legend(loc="upper right")
+    plt.grid()
+    plt.savefig('wiki/IIR_magnitude.png', dpi = my_dpi)
+    plt.show()
+   
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")
     waveform.PM(best_soln[0])
     waveform.FFTplot(waveform.f, waveform.FFT_PM, title="After Filtering")
