@@ -163,7 +163,7 @@
     \subsection{Digital Signal Processing Data}\label{sec:meth_sub1}
         Due to easily accessible data samples, the ECG signals from Assignment 1 have been analysed. This data contained
         two interference frequencies between  $f = 30 - 100Hz$. The interference frequencies must be identified and 
-        removed for more useful data.
+        removed from the data.
         \\\\
         A python class was created to analyse the signal. This class was able to convert the time domain signal to the
         frequency domain, giving a plot of the signal. This class was able to conduct filtering techniques such as Window
@@ -178,12 +178,13 @@
         individual, a Parks-McLellan filter was generated, and then applied to the original data. The filtered signal
         power was then calculated by considering the variance in the signal. The difference between the filtered power
         and the original signal power was then considered the noise power, and the signal to noise power was calculated. 
-        \\\\
         Signals with higher SNR's were considered more optimal filtering. Due to this, the signal to noise ratio of the
         signal was determined to be an appropriate measure of the sample's fitness. 
 
-    \subsection{Selecting Paranets for next GA Generations}\label{sec:meth_sub3}
-        Plz write something here.
+    \subsection{Parents}\label{sec:meth_sub3}
+        Parent chromosomes were chosen by taking the chromosomes with the largest fitness scores in the previous generation. 
+        Chromosomes with the largest fitness scores have the most successful genes and were incorporated into the
+        successor generation gene pool. 
 
     \subsection{GA Operators}\label{sec:meth_sub4}
         Plz write something here.
