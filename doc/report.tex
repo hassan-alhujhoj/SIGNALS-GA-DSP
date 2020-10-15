@@ -160,7 +160,6 @@
         Filtering, Frequency Sampling and Parks-McLellan Filtering. Plots of filtered and unfiltered data was generated. 
         This allowed the data to be analysed with a level of abstraction. 
 
-
     \subsection{Fitness Function}\label{sec:meth_sub2}
         For Genetic Algorithms, it was important to identify which samples were more optimal than others. A fitness
         function must be identified to identify more useful results. For digital signal processing, the Signal to Noise
@@ -171,24 +170,22 @@
         Signals with higher SNR's were considered more optimal filtering. Due to this, the signal to noise ratio of the
         signal was determined to be an appropriate measure of the sample's fitness. 
 
-    \subsection{Parents}\label{sec:meth_sub3}
+    \subsection{Population Selection}\label{sec:meth_sub3}
         Parent chromosomes were chosen by taking the chromosomes with the largest fitness scores in the previous generation. 
         Chromosomes with the largest fitness scores have the most successful genes and were incorporated into the
-        successor generation gene pool. 
+        successor generation gene pool. For the analysed ECG data set, a population of 20 chromosomes was used, with four
+        parents succeeding to the following generation. The effect of modifying each of these results on the success of the
+        algorithm and the number of iterations for success was investigated. 
+        \\\\
 
-    \subsection{GA Operators}\label{sec:meth_sub4}
-        Plz write something here.
+        Successive chromesomes were created through a combination of genetic mutation, and crossover of the parent chromosomes.
+        Genetic mutation was incorporated into the genetic algorithm by random variation in the genetic sequences, using numpy's 
+        randint function. This allowed the frequency genes to span the entire frequency range. Genetic crossover was implemented
+        to find optimal combinations of known genes in the gene pool. This mixes genes from parent chromosomes. The effectiveness of 
+        found gene combinations was assessed in the next generation, ideally finding combinations of chromosomes that yeild higher 
+        fitness. Any combinations with higher fitness than the original are then given a higher selection priority. 
 
-        \subsubsection{Crossover}
-            
-
-        \subsubsection{Mutation}
-
-
-        \subsubsection{Parents}
-            Plz write something here.
-
-    \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub5}
+    \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub4}
         \subsubsection{Window Filter}
             Plz write something here.
 
