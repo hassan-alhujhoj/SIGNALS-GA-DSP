@@ -125,11 +125,10 @@ class DSP_Signal():
         Gain = abs(H_Z2_dot / H_Z1_dot)
 
         # convlute the the de/numerator of the first transfer function with de/numerator of the second funcion
-        NUM_Z = np.array( np.convolve( [a, b, c], [g, h, ii] ) )
-        DEN_Z = np.array( np.convolve( [d, e, f], [j, k, l] ) )
+        NUM_Z = np.convol([a, b, c], [g, h, ii])
+        DEN_Z = np.conv([d, e, f], [j, k, l])
 
-        w, H = signal.freqz(Gain * NUM_Z, DEN_Z, self.N)
-        f = fs * w / (2 * np.pi)
+        [H, F] = np.freqz(Gain * NUM_Z, DEN_Z, self.N, fs)
         return 0
 
     #Returns a Signal to Noise Ratio for a given input Power
@@ -195,8 +194,7 @@ def main():
     f_count = 2
     mating_parent_number = 3
     pop_size = 20
-    num_generations = 10
-    my_dpi = 200 #dots per inch (resolution of an image)
+    num_generations = 1000
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
@@ -204,7 +202,7 @@ def main():
                                                            mating_parent_number, num_generations)    
     print("Best solution : \n", best_soln)
     print("Best solution fitness : \n", best_soln_fitness)
-    plt.figure(1)
+    plt.figure()
     plt.plot(best_outputs, "-k", label="Fittest Output")
     plt.title("Fitness of ECG Signal using GA Algorithm")
     plt.xlabel("Number of Iterations")
@@ -212,18 +210,7 @@ def main():
     plt.legend(loc="upper right")
     plt.grid()
     plt.show()
-    # plt.savefig('wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
 
-    plt.figure(2, figsize=(5, 10), dpi=my_dpi)
-    plt.plot(best_outputs, "-g", label="IIR Filter")
-    plt.title("IIR Filter")
-    plt.xlabel("Frequency (Hz)")
-    plt.ylabel("Magnitude (uV)")
-    plt.legend(loc="upper right")
-    plt.grid()
-    plt.savefig('wiki/IIR_magnitude.png', dpi = my_dpi)
-    plt.show()
-   
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")
     waveform.PM(best_soln[0])
     waveform.FFTplot(waveform.f, waveform.FFT_PM, title="After Filtering")

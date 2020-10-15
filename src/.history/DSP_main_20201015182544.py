@@ -196,7 +196,6 @@ def main():
     mating_parent_number = 3
     pop_size = 20
     num_generations = 10
-    my_dpi = 200 #dots per inch (resolution of an image)
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
@@ -214,14 +213,15 @@ def main():
     plt.show()
     # plt.savefig('wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
 
-    plt.figure(2, figsize=(5, 10), dpi=my_dpi)
+    plt.figure(2)
     plt.plot(best_outputs, "-g", label="IIR Filter")
     plt.title("IIR Filter")
     plt.xlabel("Frequency (Hz)")
     plt.ylabel("Magnitude (uV)")
     plt.legend(loc="upper right")
     plt.grid()
-    plt.savefig('wiki/IIR_magnitude.png', dpi = my_dpi)
+    plt.savefig('wiki/IIR_magnitude.png')
+    
     plt.show()
    
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")

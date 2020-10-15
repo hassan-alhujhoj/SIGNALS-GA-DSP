@@ -214,14 +214,14 @@ def main():
     plt.show()
     # plt.savefig('wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
 
-    plt.figure(2, figsize=(5, 10), dpi=my_dpi)
+    plt.figure(2, figsize=(400/my_dpi, 800/my_dpi), dpi=my_dpi)
     plt.plot(best_outputs, "-g", label="IIR Filter")
     plt.title("IIR Filter")
     plt.xlabel("Frequency (Hz)")
     plt.ylabel("Magnitude (uV)")
     plt.legend(loc="upper right")
     plt.grid()
-    plt.savefig('wiki/IIR_magnitude.png', dpi = my_dpi)
+    plt.savefig('wiki/IIR_magnitude.png', doi = my_dpi)
     plt.show()
    
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")

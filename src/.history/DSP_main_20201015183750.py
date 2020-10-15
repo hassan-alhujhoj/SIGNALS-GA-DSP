@@ -214,7 +214,7 @@ def main():
     plt.show()
     # plt.savefig('wiki/{}Gen{}Pop.png'.format(num_generations, pop_size))
 
-    plt.figure(2, figsize=(5, 10), dpi=my_dpi)
+    plt.figure(2, figsize=(400, 800), dpi=my_dpi)
     plt.plot(best_outputs, "-g", label="IIR Filter")
     plt.title("IIR Filter")
     plt.xlabel("Frequency (Hz)")
