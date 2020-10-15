@@ -21,7 +21,7 @@ population. The ECG is filtered by either an FIR or IIR filter. A SNR is then op
 3. Frequency Selection Filter  
 
 ### IIR Filter
-1.   Bi-quad 2-Pole notch filter  
+* Bi-quad 2-Pole notch filter  
 
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
