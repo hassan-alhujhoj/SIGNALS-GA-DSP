@@ -36,3 +36,7 @@ m# Swap / temporary files for vi and emacs.
 *.mpx
 *.t
 *.i
+
+*.blg
+*.gz
+*aux
