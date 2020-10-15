@@ -9,16 +9,19 @@ to filter an noisy ECG singal that has two fundamental interfernce frequencies u
 population. The ECG is filtered by either an FIR or IIR filter. A SNR is then optained to determine the fitness of the population.
 
 ### Rejection Frequencies
-- `f(1) = 31.456`
-- `f(2) = 74.36 Hz`
+- `30Hz <= f <= 100Hz`
 
 ### GA Operators
 1. Crossover
 2. Mutation
 
 ### FIR Filters
-I. Window Function  
-II. Parks-McClellan Filter  
+1. Window Filter  
+2.  Parks-McClellan Filter  
+3. Frequency Selection Filter  
+
+### IIR Filter
+* Bi-quad 2-Pole notch filter  
 
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
