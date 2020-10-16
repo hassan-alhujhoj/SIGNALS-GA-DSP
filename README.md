@@ -8,6 +8,9 @@ This is an code that uses the concept of Darwin's throery of natural selection. 
 to filter an noisy ECG singal that has two fundamental interfernce frequencies using the fitness of the generated frequency
 population. The ECG is filtered by either an FIR or IIR filter. A SNR is then optained to determine the fitness of the population.
 
+### GA Cycle
+<img src="doc/wiki/Flowchart.png" alt="fig4" width="1200"/>
+
 ### Rejection Frequencies
 - `30Hz <= f <= 100Hz`
 
