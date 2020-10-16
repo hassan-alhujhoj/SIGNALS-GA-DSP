@@ -299,9 +299,24 @@
     The GA used to design filter coefficients emulates these properties. Once a population and fitness function was created,
     and appropriate system parameters were identified, the algorithm was consistently able to return high-quality filters, 
     removing the interference from the original ECG signal. By inspection, these solutions identified the optimal results to
-    high degrees of accuracy. However, the algorithm took a reasonable time to produce results. This may not be practical in
-    other applications. 
-    \\\\
+    high degrees of accuracy. However, the algorithm took a reasonable time to produce results.
+
+    \begin{figure}[h!]
+        \centering  
+        \begin{subfigure}[b]{0.4\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{GenPerPopSize.png}
+            \caption{The number of generations to convergence of the FIR as the population size varies}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.5\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{af_filtering_1kGen20Pop.png}
+            \caption{}
+        \end{subfigure}
+        \caption{}
+        \label{Fig:result_1}
+    \end{figure}
+
     The effect of varying the parameters used for  the genetic algorithm, such as the number of generations, the population
     size, the number of parents \cite{Garip2018}. It was determined smaller population samples took more iterations to converge
     to a solution, sometimes not converging at the solution. However, large population samples considerably increased execution 
@@ -322,7 +337,17 @@
     over a number of generations to optimise for the optimal genes. The fitness function is used to assess the success of each
     chromosome. These are often utilized to optimize analog control signals, PI controllers or FIR filters.  
     \\\\
-    Genetic Algorithms were applied to a ECG data signal to filter interference from the graph. 
+    Genetic Algorithms were applied to a ECG data signal to filter interference. The genes, consisting of the filtering frequencies, 
+    have been used to create a filter. The filter quality has then been assessed by the fitness function, the Signal to Noise
+    ratio. The algorithm then completed a set number of evolutions unless a set threshold was reached. 
+    \\\\
+    The genetic algorithm parameters have also been analysed. It was found the larger the population size the less generations
+    required for convergence to the optimal solution. Furthermore, the larger the number of generations completed, the larger
+    the execution time of the algorithm. 
+    \\\\
+    Genetic Algorithms do not require complex understandings of the dynamics of a system, and are able to span the entire
+    genetic range, which prevents genetic algorithms finding suboptimal solutions given appropriate input parameters. However, 
+    genetic algorithms are computationally expensive.  
 
     
 
