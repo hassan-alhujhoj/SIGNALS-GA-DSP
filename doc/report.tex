@@ -123,8 +123,6 @@
         One method to filter these two frequencies was to reject them with either a window or Parks-McClellan filters.
 
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
-        ffs
-
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
@@ -143,10 +141,19 @@
             local or global. Mutation can occur some occasionally but can randomly alters the value of a string
             position. A randomly generated bit can replace any bit of the chromosome bitstring mutating the original
             bit sequence of the parents \cite{Tang1996}.
-        \subsubsection{Parentss}
-
-        \subsection{Applications}
+        \subsubsection{Parents}
         
+        \subsection{Applications}
+        Since the emergence of Darwin's theory of natural selection, GA has become a powerful tool and used in various
+         applications.  The GAs are also known as optimisation algorithms. Optimisation algorithms have two major classes.
+         These two classes are classified as calculus-based techniques and enumerative techniques. Calculus-based
+         optimisation algorithms employ the gradient-directed searching mechanism to solve error surfaces or differentiable
+         surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
+         objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
+         functions are common in signal processing \cite{Tang1996}.
+         \\\\
+         To expand on what exacly
+
 
 \section{Method}\label{sec:meth}
     To apply genetic algorithms to Digital Signal Processing, it was decided to use genetic algorithms to design a 
@@ -160,7 +167,7 @@
         \centering
         \graphicspath{{./wiki/}}
         \includegraphics[scale=1]{Flowchart.png}
-        \caption{Flowchart diagram of GA of ECG signals.}
+        \caption{Flowchart diagram of the use of GA to process ECG signals.}
         \label{Fig:flowchart}
     \end{figure}
 
@@ -197,7 +204,6 @@
         parents succeeding to the following generation. The effect of modifying each of these results on the success of the
         algorithm and the number of iterations for success was investigated. 
         \\\\
-
         Successive chromesomes were created through a combination of genetic mutation, and crossover of the parent chromosomes.
         Genetic mutation was incorporated into the genetic algorithm by random variation in the genetic sequences, using numpy's 
         randint function. This allowed the frequency genes to span the entire frequency range. Genetic crossover was implemented
@@ -280,9 +286,6 @@
 \renewcommand{\cite}{\citep}
 \bibliography{ref}
 \pagebreak
-
-\section{Appendices}
-    \subsection{Appendix A}
 
 \end{document}
 
