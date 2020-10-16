@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1602832841 "report.aux" "report.bbl" "report" 1602832955
+["bibtex report"] 1602833002 "report.aux" "report.bbl" "report" 1602833009
   "C:/Users/Luke Uni/AppData/Roaming/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440626169 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "ref.bib" 1602823229 8940 0cba9d5f9ebcebf33f3010122dce13dc ""
-  "report.aux" 1602832846 6330 a332714b59fc37f2ece09258c902d20d "pdflatex"
+  "report.aux" 1602833008 6226 33c56a0013850409af097ea89bb2458e "pdflatex"
   (generated)
   "report.blg"
   "report.bbl"
-["pdflatex"] 1602832842 "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.tex" "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.pdf" "report" 1602832955
+["pdflatex"] 1602833003 "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.tex" "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.pdf" "report" 1602833009
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -116,13 +116,13 @@
   "C:/Users/Luke Uni/AppData/Roaming/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/Luke Uni/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Luke Uni/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
-  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.aux" 1602832846 6330 a332714b59fc37f2ece09258c902d20d ""
-  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.tex" 1602832954 21273 8da53513f5b9192f2a52ce146ee8eadc ""
-  "report.aux" 1602832846 6330 a332714b59fc37f2ece09258c902d20d "pdflatex"
-  "report.bbl" 1602832842 4737 7573836e9bcfb166e011e369a4d2022d "bibtex report"
-  "report.out" 1602832846 1100 451e506c1dba0c604f4be713fe1c4b90 "pdflatex"
-  "report.tex" 1602832954 21273 8da53513f5b9192f2a52ce146ee8eadc ""
-  "report.toc" 1602832846 1424 60a1ba00db7a6d2e4bb8137402bfe32e "pdflatex"
+  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.aux" 1602833008 6226 33c56a0013850409af097ea89bb2458e ""
+  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.tex" 1602832995 21661 f957c04217371665ba02d3e4833b5e06 ""
+  "report.aux" 1602833008 6226 33c56a0013850409af097ea89bb2458e "pdflatex"
+  "report.bbl" 1602833002 4737 7573836e9bcfb166e011e369a4d2022d "bibtex report"
+  "report.out" 1602833008 1033 09c8959ab2099784130946f483fd9735 "pdflatex"
+  "report.tex" 1602832995 21661 f957c04217371665ba02d3e4833b5e06 ""
+  "report.toc" 1602833008 1341 cac27b58ec4719044464e843e4936a44 "pdflatex"
   "wiki//1kGen20Pop.png" 1602728243 139258 152194143a3a474827d149a898c39be4 ""
   "wiki//ECG_freq_spectrum.png" 1602728243 20386 9c52a9199348c7d4da69760da99b960f ""
   "wiki//Flowchart.png" 1602818633 44813 5d9e7b459d44215d831cfd52f111d248 ""
@@ -130,10 +130,10 @@
   "wiki//af_filtering_1kGen20Pop.png" 1602728243 43390 93a93110c89d464d0407808f5587e60e ""
   "wiki//crossover.png" 1602728243 135443 eb86fc7c4ad854108ab8aa6aab022b65 ""
   (generated)
-  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.log"
-  "report.log"
   "report.aux"
   "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.pdf"
+  "c:/Users/Luke Uni/OneDrive/Documents/UC/2020/ENEL420/ENEL420-GA-DSP/doc/report.log"
+  "report.toc"
+  "report.log"
   "report.out"
   "report.pdf"
-  "report.toc"
