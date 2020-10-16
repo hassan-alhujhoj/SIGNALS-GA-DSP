@@ -245,16 +245,10 @@
         fitness. Any combinations with higher fitness than the original are then given a higher selection priority. 
 
     \subsection{Finite Impulse Response (FIR) Filtering Techniques}\label{sec:meth_sub4}
-
-        \subsubsection{Window Filter}
-            Plz write something here.
-
-        \subsubsection{Parks-McClellan Filter}
-        Filters were initially designed using the Parks-McClellan algorithm. This algorithm finds the optimal Chebyshev FIR filter
-        using iteration. For each interference frequency identified, a Chebychev filter was created. All filters were then convolved
-        to the original data frequency responses. Ideally, this removed the interference at the given frequencies from the signal
-        without affecting the remaining frequency response of the signal.
-
+        While a few filtering techniques have been written into the code, the Parks-McClellan Filter was originally utilized. 
+        This algorithm finds the optimal Chebyshev FIR filter using an iterative process. For each interference frequency identified, 
+        a Chebychev filter was created. All filters were then convolved to the original data frequency responses. Ideally, this 
+        removed the interference at the given frequencies from the signal without affecting the remaining frequency response of the signal.
 
 \section{Results}\label{sec:res}
     When the Genetic Algorithm was run using a Parks-McLellan filter, the algorithm identified the optimal genes for maximum SNR. 
@@ -312,7 +306,12 @@
     to a solution, sometimes not converging at the solution. However, large population samples considerably increased execution times. However, the larger the population
     size used, the more likely the algorithm was to succeed. 
     \\\\
-    To improve the filtering capabilities , the filtering method could be incorporated into the chromosomes, which
+    While using genetic algorithms to complete this problem is possible, this may not always be practical. By visually inspecting
+    the plot in the frequency domain, it is possible to identify the frequencies (albeit to less accuracy), and manually designing
+    a filter to complete this problem. Other iteration techniques could also be used to solve for the maximum such as global convergence.
+    This would be less computationally intensive, however could require more analysis. 
+    \\\\
+    To improve the filtering capabilities, the filtering method could be incorporated into the chromosomes, which
     would allow the program to identify the optimal filter technique. This would automate the type of filter, allowing
     the program to optimise for the type of filter as well as the filter characteristics. 
 
