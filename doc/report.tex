@@ -174,14 +174,16 @@
             position. A randomly generated bit can replace any bit of the chromosome bitstring mutating the original
             bit sequence of the parents \cite{Tang1996}.
 
-        \subsubsection{Parents}
-        
-
         \subsection{Applications}
         Genetic Algorithms are widely used and can be applied in many applications such as in analog signal processing, 
         digital signal processing, DSP MCU scheduling, FIR filter design, PID tuning and PID control, etc 
-        \cite{Chen2017, Fleming1993, Cao2012, Fabijanski2008, Miyata2018, Amphlett1996}. In \cite{Chen2017}, GA were used to control 
-        a BLDC motor with PI speed controller that is then processed by a digital signal processor (DSP). 
+        \cite{Chen2017, Fleming1993, Cao2012, Fabijanski2008, Miyata2018, Amphlett1996}.
+        \\\\
+        In \cite{Chen2017}, GA were used to control a BLDC motor with PI speed controller that is then processed by 
+        a Digital Signal Processor (DSP). In a real control system, the processing time in a cycle might be token long
+        when the data communication is processed. The implementation of a GA-PI control design improves the performance of
+        the PI control of the BLDC motor according to \cite{Chen2017}. In this study, the BLDC motor fitness is evaluated
+        based on the transfer function of the motor which is then used to evaluate the chromosomes population 
 
 
 \section{Method}\label{sec:meth}
@@ -214,9 +216,7 @@
         A python class was created to analyse the signal. This class was able to convert the time domain signal to the
         frequency domain, giving a plot of the signal. This class was able to conduct filtering techniques such as Window
         Filtering, Frequency Sampling and Parks-McLellan Filtering. Plots of filtered and unfiltered data was generated. 
-        This allowed the data to be analysed with a level of abstraction. 
-        \\\\
-        
+        This allowed the data to be analysed with a level of abstraction.
 
     \subsection{Fitness Function}\label{sec:meth_sub2}
         As each characteristic will produce a different gain, it was important to quantify how effective each filter was. 

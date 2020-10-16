@@ -4,9 +4,9 @@
 <img src="doc/wiki/af_filtering_100Gen.png" alt="fig3" width="1200"/>
 
 ## Description
-This is an code that uses the concept of Darwin's throery of natural selection. The code uses genetic algorithm 
-to filter an noisy ECG singal that has two fundamental interfernce frequencies using the fitness of the generated frequency
-population. The ECG is filtered by either an FIR or IIR filter. A SNR is then optained to determine the fitness of the population.
+This is a code that uses the concept of Darwin's theory of natural selection. The code uses Genetic Algorithms (GA) 
+to filter noisy ECG singals that has two fundamental interference frequencies using the fitness of the generated frequency
+population. The ECG is filtered by either an FIR or IIR filter. A Signal to Noise Ratio (SNR) is then obtained to determine the fitness of the population.
 
 ### GA Cycle
 <img src="doc/wiki/Flowchart.png" alt="fig4" width="300" align="center"/>
