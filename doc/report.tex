@@ -152,9 +152,8 @@
        \item Delete numbers of the population  to make room for the new chromosomes;
        \item Compute the fittness of $X_{r}(t)$, and insert these into the popuation;
        \item $t:= t + 1$, if not (end-test) go to step 3, or else stop an dreturn the best chromosome.
-       
-
    \end{enumerate}
+
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
@@ -168,15 +167,22 @@
             chromosomes to produce offsprings that contain some parts of both parents' genetic material. Crossover
             is considered by many GA practitioners to be the determining factor that distinguishes the GA from
             all other optimisation algorithms \cite{Tang1996}.
+
         \subsubsection{Mutation}
             Mutation is another operator that introduces variations into the chromosomes. This variation can be
             local or global. Mutation can occur some occasionally but can randomly alters the value of a string
             position. A randomly generated bit can replace any bit of the chromosome bitstring mutating the original
             bit sequence of the parents \cite{Tang1996}.
+
         \subsubsection{Parents}
         
+
         \subsection{Applications}
-        Another application is...
+        Genetic Algorithms are widely used and can be applied in many applications such as in analog signal processing, 
+        digital signal processing, DSP MCU scheduling, FIR filter design, PID tuning and PID control, etc 
+        \cite{Chen2017, Fleming1993, Cao2012, Fabijanski2008, Miyata2018, Amphlett1996}. In \cite{Chen2017}, GA were used to control 
+        a BLDC motor with PI speed controller that is then processed by a digital signal processor (DSP). 
+
 
 \section{Method}\label{sec:meth}
     To apply genetic algorithms to Digital Signal Processing, it was decided to use genetic algorithms to design a 
