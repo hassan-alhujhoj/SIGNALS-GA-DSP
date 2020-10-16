@@ -316,7 +316,6 @@
         \caption{}
         \label{Fig:result_1}
     \end{figure}
-
     The effect of varying the parameters used for  the genetic algorithm, such as the number of generations, the population
     size, the number of parents \cite{Garip2018}. It was determined smaller population samples took more iterations to converge
     to a solution, sometimes not converging at the solution. However, large population samples considerably increased execution 
@@ -324,13 +323,13 @@
     \\\\
     While using genetic algorithms to complete this problem is possible, this may not always be practical\cite[]{Yu2003}. By 
     visually inspecting the plot in the frequency domain, it is possible to identify the frequencies (albeit to less accuracy), 
-    and manually designing a filter to complete this problem. Other iteration techniques could also be used to solve for the 
+    and manually designing a filter to complete this problem. As genetic algorithms do not follow a standard iteration process, 
+    often designers can be reluctant to use genetic algorithms. Other iteration techniques could also be used to solve for the 
     maximum such as global convergence. This would be less computationally intensive, however could require more analysis. 
     \\\\
     To improve the filtering capabilities, the filtering method could be incorporated into the chromosomes, which
     would allow the program to identify the optimal filter technique. This would automate the type of filter, allowing
     the program to optimise for the type of filter as well as the filter characteristics. 
-
 \section{Conclusion}\label{sec:conc}
     The purpose of this report was to investigate the applications of genetic algorithms in signal processing. This is an 
     evolutionary algorithm, which uses a population of chromosomes containing a set of genes. The population is evolved
@@ -347,7 +346,7 @@
     \\\\
     Genetic Algorithms do not require complex understandings of the dynamics of a system, and are able to span the entire
     genetic range, which prevents genetic algorithms finding suboptimal solutions given appropriate input parameters. However, 
-    genetic algorithms are computationally expensive.  
+    genetic algorithms are computationally expensive, which can limit their applications.  
 
     
 
