@@ -137,7 +137,7 @@
     surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
     objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
     functions are common in signal processing \cite{Tang1996}.
-    \linebreak
+    \\
     \begin{figure}[h!]
         \centering
         \graphicspath{{./wiki/}}
@@ -201,7 +201,7 @@
     For each chromosome, the filter created by its characteristics, returning a fitness score, with higher scores 
     representing higher quality filters. The genetic algorithm used the fitness scores of the previous generation
     to generate a new generation, where the highest $n_{parent}$ scores become the parents of the succeeding generation. 
-    utilising genetic crossover, variation and mutation. An identical process is then conducted on the succeeding generation (Fig. \ref{Fig:method_1}). 
+    utilising genetic crossover, variation and mutation. An identical process is then conducted on the succeeding generation (Figure \ref{Fig:method_1}). 
     As the number of iterations increases, the population fitness increases. Once $N_{generations}$ have been reached, the
     optimal filter coefficients are returned. 
 
@@ -264,25 +264,41 @@
     been removed from the frequency plot. When data from other files was tested, these were also successful without changing 
     parameters. This proved the fitness function was robust as interference frequencies were identified in various conditions
     without needing data training. 
+    \\\\
+    In the time domain, (Figure \ref{Fig:result_2}) the interference frequencies introduced noise, obstructing the true waveform. 
+    When the frequencies are removed, the signal is much clearer, resulting in more useful information due to the filtering. 
     
     \begin{figure}[h!]
         \centering  
         \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
             \includegraphics[width=\linewidth]{ECG_freq_spectrum.png}
-            \caption{Before filtering.}
         \end{subfigure}%
         \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
             \includegraphics[width=\linewidth]{af_filtering_1kGen20Pop.png}
-            \caption{After filtering.}
         \end{subfigure}
         \caption{The filtered output of ECG signal 1, using $p_{size} = 20$, $n = 1000$.}
         \label{Fig:result_1}
     \end{figure}
 
+    \begin{figure}[h!]
+        \centering  
+        \begin{subfigure}[b]{0.5\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{TDU.png}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.5\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{TDF.png}
+        \end{subfigure}
+        \caption{The unfiltered (left) and filtered (right) time domain signal, 
+        seen above with parameters $p_{size} = 20$, $n = 1000$.}
+        \label{Fig:result_2}
+    \end{figure}
+
     When varying the number of generations with the population size, the maximum fitness was consistently reached within 5 
-    iterations (Fig. \ref{Fig:result_2}). However, when the population size was decreased, a larger number of
+    iterations (Figure \ref{Fig:result_2}). However, when the population size was decreased, a larger number of
     iterations was required to reach optimum fitness. Using $p_{size} = 20$, $n = 50$ gave reasonable filter results with a
     small execution time \cite[]{Garip2018}.
 

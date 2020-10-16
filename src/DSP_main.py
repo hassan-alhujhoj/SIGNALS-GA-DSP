@@ -208,7 +208,7 @@ def main():
     f_count = 2
     mating_parent_number = 3
     pop_size = 20
-    num_generations = 1000
+    num_generations = 50
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
@@ -231,6 +231,15 @@ def main():
     waveform.FFTplot(waveform.f, waveform.FFT_0, title="Before filtering")
     waveform.PM(best_soln[0])
     waveform.FFTplot(waveform.f, waveform.FFT_PM, title="After Filtering")
+
+    plt.figure(5)
+    plt.plot(waveform.t[:2000], waveform.y_0[:2000])
+    plt.grid()
+    plt.show()
+    plt.figure(6)
+    plt.plot(waveform.t[:2000], waveform.y_PM[:2000])
+    plt.grid()
+    plt.show()
     
 
 
