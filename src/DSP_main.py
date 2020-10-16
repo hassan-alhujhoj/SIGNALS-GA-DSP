@@ -208,8 +208,7 @@ def main():
     f_count = 2
     mating_parent_number = 3
     pop_size = 20
-    num_generations = 10
-    my_dpi = 200 #dots per inch (resolution of an image)
+    num_generations = 1000
     
     # Conduct a Genetic Algorithm approximation
     best_soln, best_soln_fitness, best_outputs = GA_filter(waveform, 
