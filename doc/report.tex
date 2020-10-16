@@ -182,8 +182,18 @@
         In \cite{Chen2017}, GA were used to control a BLDC motor with PI speed controller that is then processed by 
         a Digital Signal Processor (DSP). In a real control system, the processing time in a cycle might be token long
         when the data communication is processed. The implementation of a GA-PI control design improves the performance of
-        the PI control of the BLDC motor according to \cite{Chen2017}. In this study, the BLDC motor fitness is evaluated
-        based on the transfer function of the motor which is then used to evaluate the chromosomes population 
+        the PI control of the BLDC motor . The BLDC motor fitness is evaluated based on the BLDC motor closed-loop control 
+        system which is then used to evaluate the chromosomes population. The results of this designed showed step responses
+        of GA-PI that are better than the standard PI controller response plots \cite{Chen2017}.
+        \\\\
+        Another application of GA can be found in antenna array beamforming or thinned antenna arrays (TAA) for software-defined
+        radio applications. GA can be a desired choice to solve the problem of unsymmetric linea TAAs to produce the desired
+        radiation pattern \cite{Cao2012}. Genetic Algorithms, furthermore, have been used find a solution to Non-deterministic Polynomial
+        complete (NP-complete) problems of multi-core scheduling for audio DSP algorithms \cite{Amphlett1996}. NP-complete problems are
+        any of a class of computational problems that no efficient solution or algorithm has been found. Many computer science problems 
+        belong to this complex class. Examples such as traveling-salesman, satisfiability, and graph-covering problems all fall into that 
+        class \cite{Encyc2020}. It should be note that the results from the performance of GA-based multi-processor scheduling compares
+        favourably with exiting heuristic methods since they out-perform all other existing techniques for most applications \cite{Amphlett1996}. 
 
 
 \section{Method}\label{sec:meth}
