@@ -39,12 +39,12 @@
 
 \title{
     ENEL420 - Genetic Algorithms in Digital Signal Processing\\
-    \vspace{1cm}
+    \vspace{2cm}
     \begin{large} 
         Department of Electrical and Computer Engineering\\
         University of Canterbury\\
     \end{large}
-    \vspace{1cm}
+    \vspace{2cm}
 }
 
 \author{
@@ -57,13 +57,16 @@
 \begin{document}
 \maketitle
 
-\vspace{4cm}
+\vspace{2cm}
 \begin{abstract}
-    Genetic Algorithms (GA's) are an evolutionary algorithm, evolving a population of solutions for an optimised 
-    solution. This relies on Darwins's Theory of Natural Selection, where he claimed that natural variation, which exists in
-    all populations, improve the gene pool amongst, forming the basis for evolution. Genetic Algorithms mathematically 
-    formulates this theory, which allows its application to areas in Digital Signal Processing such as 
-    Finite Impulse Response Filters, investigated throughout this report. 
+    \textrm {
+        Genetic Algorithms (GA's) are an evolutionary algorithm, evolving a population of solutions for an optimised 
+        solution. This relies on Darwins's Theory of Natural Selection, where he claimed that natural variation, which exists in
+        all populations, improve the gene pool amongst, forming the basis for evolution. Genetic Algorithms mathematically 
+        formulates this theory, which allows its application to areas in Digital Signal Processing such as 
+        Finite Impulse Response Filters, investigated throughout this report. A genetic algorithm was designed to remove
+        interference signals from an electrocardiogram (ECG) data signal without data training.
+    }
 \end{abstract}
 
 \pagebreak
@@ -187,18 +190,8 @@
         In \cite{Chen2017}, GA were used to control a BLDC motor with PI speed controller that is then processed by 
         a Digital Signal Processor (DSP). In a real control system, the processing time in a cycle might be token long
         when the data communication is processed. The implementation of a GA-PI control design improves the performance of
-        the PI control of the BLDC motor . The BLDC motor fitness is evaluated based on the BLDC motor closed-loop control 
-        system which is then used to evaluate the chromosomes population. The results of this designed showed step responses
-        of GA-PI that are better than the standard PI controller response plots \cite{Chen2017}.
-        \\\\
-        Another application of GA can be found in antenna array beamforming or thinned antenna arrays (TAA) for software-defined
-        radio applications. GA can be a desired choice to solve the problem of unsymmetric linea TAAs to produce the desired
-        radiation pattern \cite{Cao2012}. Genetic Algorithms, furthermore, have been used find a solution to Non-deterministic Polynomial
-        complete (NP-complete) problems of multi-core scheduling for audio DSP algorithms \cite{Amphlett1996}. NP-complete problems are
-        any of a class of computational problems that no efficient solution or algorithm has been found. Many computer science problems 
-        belong to this complex class. Examples such as traveling-salesman, satisfiability, and graph-covering problems all fall into that 
-        class \cite{Encyc2020}. It should be note that the results from the performance of GA-based multi-processor scheduling compares
-        favourably with exiting heuristic methods since they out-perform all other existing techniques for most applications \cite{Amphlett1996}. 
+        the PI control of the BLDC motor according to \cite{Chen2017}. In this study, the BLDC motor fitness is evaluated
+        based on the transfer function of the motor which is then used to evaluate the chromosomes population 
 
 
 \section{Method}\label{sec:meth}
@@ -321,14 +314,13 @@
         \begin{subfigure}[b]{0.4\linewidth}
             \graphicspath{{./wiki/}}
             \includegraphics[width=\linewidth]{GenPerPopSize.png}
-            \caption{The number of generations to convergence of the FIR as the population size varies}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.5\linewidth}
-            \graphicspath{{./wiki/}}
-            \includegraphics[width=\linewidth]{af_filtering_1kGen20Pop.png}
-            \caption{The execution time of 100 generations as the population size varies}
         \end{subfigure}
-        \caption{}
+        \begin{subfigure}[b]{0.4\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{ExPerPopSize.png}
+        \end{subfigure}
+        \caption{The effect on the number of required generations (Left) for convergence and execution time (Right) from varying
+        population size. }
         \label{Fig:discuss_2}
     \end{figure}
 
