@@ -123,6 +123,38 @@
         One method to filter these two frequencies was to reject them with either a window or Parks-McClellan filters.
 
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
+    Since the emergence of Darwin's theory of natural selection, GA has become a powerful tool and used in various
+    applications.  The GAs are also known as optimisation algorithms. Optimisation algorithms have two major classes.
+    These two classes are classified as calculus-based techniques and enumerative techniques. Calculus-based
+    optimisation algorithms employ the gradient-directed searching mechanism to solve error surfaces or differentiable
+    surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
+    objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
+    functions are common in signal processing \cite{Tang1996}.
+    \\\\
+    Genetic Algorithms have a general cycle known as GA cycle, shown in Figure \ref{Fig:GA_cycle}. This cycle is a searching
+    process  based on the laws of natural selection and genetics. A simple GA consists of three operations: Selection, Genetic
+    Operation and Replacement. GA population comprises of a group of chromosomes from which candidates can be selected for the
+    solution of a problem. The population, initially, is generated randomly. The fitness values of all chromosomes are 
+    evaluated by calculating the objective function in a decoded form (phenotype). to generate the offspring by the defined 
+    genetic operations, a particular group of chromosomes (parents) are selected from the total population. The fitness of the 
+    offspring is evaluated in a similar fashion to their parent chromosomes. The chromosomes in the current population are then 
+    replaced by their offspring based on a certain replacement strategy defined by the user \cite{Tang1996}.
+    \\\\
+    This GA cycle is then repeated until a desired termination criterion is reached. For example a predefined number of generations
+    is produced. If all goes well and according to this process of simulated evolution, the best chromosomes is the final population 
+    can become a highly evolved solution to the problem. Generally, GA follows the following process \cite{Tang1996}.
+
+    \begin{enumerate}
+       \item Randomly generate an initial population $X(O):= (x_{1}, x_{2}, ..., x_{N})$.
+       \item Compute the fitness $F(x_{i})$ of each chromosome $x_{i}$ in the  current population $X(t)$;
+       \item Create new chromosomes $X_{r}(t)$ by mating current chromosomes, applying mutation and recombination (crossover) as the 
+       parent chromosomes mate;
+       \item Delete numbers of the population  to make room for the new chromosomes;
+       \item Compute the fittness of $X_{r}(t)$, and insert these into the popuation;
+       \item $t:= t + 1$, if not (end-test) go to step 3, or else stop an dreturn the best chromosome.
+       
+       
+   \end{enumerate}
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
@@ -144,37 +176,6 @@
         \subsubsection{Parents}
         
         \subsection{Applications}
-        Since the emergence of Darwin's theory of natural selection, GA has become a powerful tool and used in various
-         applications.  The GAs are also known as optimisation algorithms. Optimisation algorithms have two major classes.
-         These two classes are classified as calculus-based techniques and enumerative techniques. Calculus-based
-         optimisation algorithms employ the gradient-directed searching mechanism to solve error surfaces or differentiable
-         surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
-         objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
-         functions are common in signal processing \cite{Tang1996}.
-         \\\\
-         Genetic Algorithms have a general cycle known as GA cycle, shown in Figure \ref{Fig:GA_cycle}. This cycle is a searching
-         process  based on the laws of natural selection and genetics. A simple GA consists of three operations: Selection, Genetic
-         Operation and Replacement. GA population comprises of a group of chromosomes from which candidates can be selected for the
-         solution of a problem. The population, initially, is generated randomly. The fitness values of all chromosomes are 
-         evaluated by calculating the objective function in a decoded form (phenotype). to generate the offspring by the defined 
-         genetic operations, a particular group of chromosomes (parents) are selected from the total population. The fitness of the 
-         offspring is evaluated in a similar fashion to their parent chromosomes. The chromosomes in the current population are then 
-         replaced by their offspring based on a certain replacement strategy defined by the user \cite{Tang1996}.
-         \\\\
-         This GA cycle is then repeated until a desired termination criterion is reached. For example a predefined number of generations
-         is produced. If all goes well and according to this process of simulated evolution, the best chromosomes is the final population 
-         can become a highly evolved solution to the problem. Generally, GA follows the following process \cite{Tang1996}.
-
-         \begin{enumerate}
-            \item Randomly generate an initial population $X(O):= (x_{1}, x_{2}, ..., x_{N})$.
-            \item Compute the fitness $F(x_{i})$ of each chromosome $x_{i}$ in the  current population $X(t)$;
-            \item Create new chromosomes $X_{r}(t)$ by mating current chromosomes, applying mutation and recombination (crossover) as the 
-            parent chromosomes mate;
-            \item Delete numbers of the population  to make room for the new chromosomes;
-            \item Compute the fittness of $X_{r}(t)$, and insert these into the popuation;
-            \item $t:= t + 1$, if not (end-test) go to step 3, or else stop an dreturn the best chromosome.
-        \end{enumerate}
-
         Another application is...
 
 \section{Method}\label{sec:meth}
