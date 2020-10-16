@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1602845527 "report.aux" "report.bbl" "report" 1602845546
+["bibtex report"] 1602847722 "report.aux" "report.bbl" "report" 1602847794
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "ref.bib" 1602842046 9509 847ffa904a6c7e730d1d1ddc6436ff21 ""
-  "report.aux" 1602845532 7095 239188879baf0e82cb6ba8e1be507cd3 "pdflatex"
+  "report.aux" 1602847794 7095 b9e9e3c4b9d1aaf973cc4f1955b50087 "pdflatex"
   (generated)
-  "report.bbl"
   "report.blg"
-["pdflatex"] 1602845528 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602845546
+  "report.bbl"
+["pdflatex"] 1602847791 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602847794
   "./wiki/1kGen20Pop.png" 1602663620 139258 b46ca9c2b7ca7e8274fff95b16a3b28f ""
   "./wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "./wiki/ExPerPopSize.png" 1602844352 17710 1457d060e853974cd0cc30446e5d2e87 ""
@@ -17,8 +17,8 @@
   "./wiki/TDU.png" 1602845514 40481 d6f3d3a5f8bf530acca87a3e928908d2 ""
   "./wiki/af_filtering_1kGen20Pop.png" 1602663653 43390 ac0551a138cc7a3e05b63eebfcd5be3e ""
   "./wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux" 1602845532 7095 239188879baf0e82cb6ba8e1be507cd3 ""
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" 1602845514 24726 e81d7536e4901e68355bccbdda087bf4 ""
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux" 1602847794 7095 b9e9e3c4b9d1aaf973cc4f1955b50087 ""
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" 1602847779 24699 739024b3226422fb3583fba0a9bb21f9 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -128,11 +128,11 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "report.aux" 1602845532 7095 239188879baf0e82cb6ba8e1be507cd3 "pdflatex"
-  "report.bbl" 1602845528 5040 da78afde0362ffc28e0facdd7c746092 "bibtex report"
-  "report.out" 1602845532 983 c6c18b11c19db85903aa3f2cbb890827 "pdflatex"
-  "report.tex" 1602845514 24726 e81d7536e4901e68355bccbdda087bf4 ""
-  "report.toc" 1602845532 1275 c2d29b39bc8559050eea1b22e781fc83 "pdflatex"
+  "report.aux" 1602847794 7095 b9e9e3c4b9d1aaf973cc4f1955b50087 "pdflatex"
+  "report.bbl" 1602847722 5040 da78afde0362ffc28e0facdd7c746092 "bibtex report"
+  "report.out" 1602847794 983 c6c18b11c19db85903aa3f2cbb890827 "pdflatex"
+  "report.tex" 1602847779 24699 739024b3226422fb3583fba0a9bb21f9 ""
+  "report.toc" 1602847794 1275 c2d29b39bc8559050eea1b22e781fc83 "pdflatex"
   "wiki/1kGen20Pop.png" 1602663620 139258 b46ca9c2b7ca7e8274fff95b16a3b28f ""
   "wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "wiki/ExPerPopSize.png" 1602844352 17710 1457d060e853974cd0cc30446e5d2e87 ""
@@ -144,10 +144,10 @@
   "wiki/af_filtering_1kGen20Pop.png" 1602663653 43390 ac0551a138cc7a3e05b63eebfcd5be3e ""
   "wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   (generated)
+  "report.aux"
   "report.out"
   "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
   "report.log"
-  "report.aux"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
   "report.toc"
   "report.pdf"
