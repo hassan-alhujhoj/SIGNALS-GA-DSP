@@ -25,4 +25,4 @@ population. The ECG is filtered by either an FIR or IIR filter. A SNR is then op
 
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
-* [Luke Trenberth](https://eng-git.canterbury.ac.nz/ltr28)
+* [Luke Trenberth](https://github.com/ltr28)
