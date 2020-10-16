@@ -178,17 +178,23 @@
         Another application is...
 
 \section{Method}\label{sec:meth}
-    To apply genetic algorithms to Digital Signal Processing, it was decided to use genetic algorithms to design a 
-    Finite Impulse Response filter. Input parameters of the transition width of bands, the bandwidth
-    and the filter frequencies were used to create a filter. A fitness function was then chosen to analyse the fitness
-    of each sample in the population. By selecting the parents with the highest fitness and conducting genetic crossover,
-    variation and mutation. Through iteration of this process, the population fitness increased, giving the optimal results, 
-    identifying the optimal parameters to identify the most optimal filter, and the best result was returned for the user.
+    In this assignment, genetic algorithms were used to design a bandstop Finite Impulse Response (FIR) filter for Assignment 1's 
+    ECG data. To design a filter, the filtered frequencies, the bandwidth and band transition width  were required 
+    characteristics. These were set as the genes for the filter and each chromosome contained these parameters.
+    A population was then initialised with $p_{size}$ chromosomes, each containing the genes to create a filter. 
+    For each chromosome, the filter created by its characteristics, returning a fitness score, with higher scores 
+    representing higher quality filters. The genetic algorithm used the fitness scores of the previous generation
+    to generate a new generation, where the highest $n_{parent}$ scores become the parents of the succeeding generation. 
+    utilising genetic crossover, variation and mutation. An identical process is then
+    conducted on the succeeding generation. As the number of iterations increases, 
+
+    the population fitness increased, giving the optimal results, identifying the optimal parameters to identify the most
+     optimal filter, and the best result was returned for the user.
 
     \begin{figure}[h!]
         \centering
         \graphicspath{{./wiki/}}
-        \includegraphics[scale=1]{Flowchart.png}
+        \includegraphics[scale=0.8]{Flowchart.png}
         \caption{Flowchart diagram of the use of GA to process ECG signals.}
         \label{Fig:flowchart}
     \end{figure}
@@ -228,7 +234,7 @@
         \\\\
         Successive chromosomes were created through a combination of genetic mutation, and crossover of the parent chromosomes.
         Genetic mutation was incorporated into the genetic algorithm by random variation in the genetic sequences, using numpy's 
-        randint function. This allowed the frequency genes to span the entire frequency range. Genetic crossover was implemented
+        $np.randint()$ function. This allowed the frequency genes to span the entire frequency range. Genetic crossover was implemented
         to find optimal combinations of known genes in the gene pool. This mixes genes from parent chromosomes. The effectiveness of 
         found gene combinations was assessed in the next generation, ideally finding combinations of chromosomes that yield higher 
         fitness. Any combinations with higher fitness than the original are then given a higher selection priority. 
