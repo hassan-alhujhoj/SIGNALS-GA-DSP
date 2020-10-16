@@ -209,7 +209,7 @@
     \subsection{Digital Signal Processing Data}\label{sec:meth_sub1}
         Due to accessible data samples, the ECG signals from Assignment 1 have been analysed. This data contained
         two interference frequencies between  $f = 30 - 100Hz$. The interference frequencies must be identified and 
-        removed from the data. Each chromosome had a set of genes representing a filter property. The genes were 
+        removed from the data. \cite[]{Garip2018} Each chromosome had a set of genes representing a filter property. The genes were 
         represented as decimal numbers, known as decimal encoding, which is useful in scenarios that require a high
         level of accuracy. 
         \\\\
@@ -278,7 +278,7 @@
     When contrasting the number of iterations with the population frequency, it was found the maximum fitness consistently reached 
     the maximum population fitness within 50 iterations. However, when the population size was decreased, a larger number of
     iterations was required to reach optimum fitness. Using $p_{size} = 20$, $n = 50$ gave reasonable filter results with a
-    quick calculation time.
+    quick calculation time \cite[]{Garip2018} .
 
     \begin{figure}[h!]
         \centering
@@ -298,9 +298,10 @@
     This can be difficult in systems that require significant time for data gathering. GA's are also computationally intensive.
     \\\\
     The GA used to design filter coefficients emulates these properties. Once a population and fitness function was created,
-    and appropriate system parameters were identified, the algorithm was consistently able to return high-quality results. 
-    By inspection, these solutions identified the optimal results to high degrees of accuracy. However, the algorithm took
-    a reasonable time to produce results. This may not be practical in other applications. 
+    and appropriate system parameters were identified, the algorithm was consistently able to return high-quality filters, 
+    removing the interference from the original ECG signal. By inspection, these solutions identified the optimal results to
+    high degrees of accuracy. However, the algorithm took a reasonable time to produce results. This may not be practical in
+    other applications. 
     \\\\
     The effect of varying the parameters used for  the genetic algorithm, such as the number of generations, the population
     size, the number of parents \cite{Garip2018}. It was determined smaller population samples took more iterations to converge
