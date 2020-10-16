@@ -232,5 +232,8 @@ def main():
     waveform.PM(best_soln[0])
     waveform.FFTplot(waveform.f, waveform.FFT_PM, title="After Filtering")
     
-main()
 
+
+
+if __name__ == "__main__":
+    main()
