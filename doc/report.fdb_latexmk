@@ -1,19 +1,19 @@
 # Fdb version 3
-["bibtex report"] 1602811235 "report.aux" "report.bbl" "report" 1602811261
+["bibtex report"] 1602811235 "report.aux" "report.bbl" "report" 1602811462
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "ref.bib" 1602771696 7421 4ff4710a57ceb85f3a211a544df87174 ""
   "report.aux" 1602811261 7339 a6a5d17f1e360b169989f5d10bd6a243 "pdflatex"
   (generated)
-  "report.blg"
   "report.bbl"
-["pdflatex"] 1602811259 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602811261
+  "report.blg"
+["pdflatex"] 1602811259 "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf" "report" 1602811462
   "./wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "./wiki/Flowchart.png" 1602806364 39148 eef3dd0680676569f20d73b38b71007a ""
   "./wiki/GA_cycle.png" 1602778861 52208 e5f24340679b48d556fa8b510a7ffcc4 ""
   "./wiki/af_filtering_1kGen20Pop.png" 1602663653 43390 ac0551a138cc7a3e05b63eebfcd5be3e ""
   "./wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux" 1602811261 7339 a6a5d17f1e360b169989f5d10bd6a243 ""
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" 1602811258 16355 a2173dd92a53130ad0a760b7cea6a245 ""
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.tex" 1602811455 16355 a2173dd92a53130ad0a760b7cea6a245 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -123,7 +123,7 @@
   "report.aux" 1602811261 7339 a6a5d17f1e360b169989f5d10bd6a243 "pdflatex"
   "report.bbl" 1602811235 1357 866a2a5fc417c3bf4756ee66477a2934 "bibtex report"
   "report.out" 1602811261 2018 393824fb0b4e3202cf8d5f1a01d75f25 "pdflatex"
-  "report.tex" 1602811258 16355 a2173dd92a53130ad0a760b7cea6a245 ""
+  "report.tex" 1602811455 16355 a2173dd92a53130ad0a760b7cea6a245 ""
   "report.toc" 1602811261 2535 0d4f96ff165e5abb5d4108cf92eb180b "pdflatex"
   "wiki/ECG_freq_spectrum.png" 1602681913 20386 2b689b0f67ceff4436442338f2604d55 ""
   "wiki/Flowchart.png" 1602806364 39148 eef3dd0680676569f20d73b38b71007a ""
@@ -131,10 +131,10 @@
   "wiki/af_filtering_1kGen20Pop.png" 1602663653 43390 ac0551a138cc7a3e05b63eebfcd5be3e ""
   "wiki/crossover.png" 1602679658 135443 74bf688f2ff3cd167a53a794799c706d ""
   (generated)
-  "report.pdf"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
-  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
-  "report.log"
   "report.aux"
-  "report.toc"
+  "report.log"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.log"
+  "report.pdf"
+  "/Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.pdf"
   "report.out"
+  "report.toc"
