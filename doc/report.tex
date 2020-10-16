@@ -151,8 +151,30 @@
          objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
          functions are common in signal processing \cite{Tang1996}.
          \\\\
-         To expand on what exacly
+         Genetic Algorithms have a general cycle known as GA cycle, shown in Figure \ref{Fig:GA_cycle}. This cycle is a searching
+         process  based on the laws of natural selection and genetics. A simple GA consists of three operations: Selection, Genetic
+         Operation and Replacement. GA population comprises of a group of chromosomes from which candidates can be selected for the
+         solution of a problem. The population, initially, is generated randomly. The fitness values of all chromosomes are 
+         evaluated by calculating the objective function in a decoded form (phenotype). to generate the offspring by the defined 
+         genetic operations, a particular group of chromosomes (parents) are selected from the total population. The fitness of the 
+         offspring is evaluated in a similar fashion to their parent chromosomes. The chromosomes in the current population are then 
+         replaced by their offspring based on a certain replacement strategy defined by the user \cite{Tang1996}.
+         \\\\
+         This GA cycle is then repeated until a desired termination criterion is reached. For example a predefined number of generations
+         is produced. If all goes well and according to this process of simulated evolution, the best chromosomes is the final population 
+         can become a highly evolved solution to the problem. Generally, GA follows the following process \cite{Tang1996}.
 
+         \begin{enumerate}
+            \item Randomly generate an initial population $X(O):= (x_{1}, x_{2}, ..., x_{N})$.
+            \item Compute the fitness $F(x_{i})$ of each chromosome $x_{i}$ in the  current population $X(t)$;
+            \item Create new chromosomes $X_{r}(t)$ by mating current chromosomes, applying mutation and recombination (crossover) as the 
+            parent chromosomes mate;
+            \item Delete numbers of the population  to make room for the new chromosomes;
+            \item Compute the fittness of $X_{r}(t)$, and insert these into the popuation;
+            \item $t:= t + 1$, if not (end-test) go to step 3, or else stop an dreturn the best chromosome.
+        \end{enumerate}
+
+        Another application is...
 
 \section{Method}\label{sec:meth}
     To apply genetic algorithms to Digital Signal Processing, it was decided to use genetic algorithms to design a 
@@ -199,11 +221,11 @@
         parents succeeding to the following generation. The effect of modifying each of these results on the success of the
         algorithm and the number of iterations for success was investigated. 
         \\\\
-        Successive chromesomes were created through a combination of genetic mutation, and crossover of the parent chromosomes.
+        Successive chromosomes were created through a combination of genetic mutation, and crossover of the parent chromosomes.
         Genetic mutation was incorporated into the genetic algorithm by random variation in the genetic sequences, using numpy's 
         randint function. This allowed the frequency genes to span the entire frequency range. Genetic crossover was implemented
         to find optimal combinations of known genes in the gene pool. This mixes genes from parent chromosomes. The effectiveness of 
-        found gene combinations was assessed in the next generation, ideally finding combinations of chromosomes that yeild higher 
+        found gene combinations was assessed in the next generation, ideally finding combinations of chromosomes that yield higher 
         fitness. Any combinations with higher fitness than the original are then given a higher selection priority. 
 
     \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub4}
@@ -250,6 +272,8 @@
 
 \section{Discussion}\label{sec:dis}
     Discussion.
+    \subsection{Improvements}
+        Plz write something in here.
 
 \section{Conclusion}\label{sec:conc}
     Reinstate the stuff you've talked about in the report. Don't introduce new materials in here.
