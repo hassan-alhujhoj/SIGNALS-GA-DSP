@@ -13,6 +13,7 @@
 \usepackage{float}
 \usepackage{changepage}
 \usepackage{lipsum}
+\usepackage{subcaption}
 
 \setlength{\oddsidemargin}{0mm}
 \setlength{\evensidemargin}{-14mm}
@@ -201,6 +202,9 @@
         frequency domain, giving a plot of the signal. This class was able to conduct filtering techniques such as Window
         Filtering, Frequency Sampling and Parks-McLellan Filtering. Plots of filtered and unfiltered data was generated. 
         This allowed the data to be analysed with a level of abstraction. 
+        \\\\
+        Each chromosome in the population had a set of genes representing a filter property. The genes were represented
+        as decimal numbers, known as decimal encoding, which is useful in scenarios that require a high level of accuracy. 
 
     \subsection{Fitness Function}\label{sec:meth_sub2}
         For Genetic Algorithms, it was important to identify which samples were more optimal than others. A fitness
@@ -209,13 +213,14 @@
         individual, a Parks-McLellan filter was generated, and then applied to the original data. The filtered signal
         power was then calculated by considering the variance in the signal. The difference between the filtered power
         and the original signal power was then considered the noise power, and the signal to noise power was calculated. 
-        Signals with higher SNR's were considered more optimal filtering. Due to this, the signal to noise ratio of the
+        Signals with higher SNRs were considered more optimal filtering. Due to this, the signal to noise ratio of the 
         signal was determined to be an appropriate measure of the sample's fitness. 
 
-        \begin{equation} SNR = var(y_0) - var(y)\end{equation}
+        \begin{equation} SNR = var(y_{0}) - var(y)\end{equation}
 
     \subsection{Population Selection}\label{sec:meth_sub3}
-        Parent chromosomes were chosen by taking the chromosomes with the largest fitness scores in the previous generation. 
+        Parent chromosomes were chosen by taking the chromosomes with the largest fitness scores in the previous generation,
+        known as elitest selection. 
         Chromosomes with the largest fitness scores have the most successful genes and were incorporated into the
         successor generation gene pool. For the analysed ECG data set, a population of 20 chromosomes was used, with four
         parents succeeding to the following generation. The effect of modifying each of these results on the success of the
@@ -228,50 +233,70 @@
         found gene combinations was assessed in the next generation, ideally finding combinations of chromosomes that yield higher 
         fitness. Any combinations with higher fitness than the original are then given a higher selection priority. 
 
-    \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub4}
+    \subsection{Finite Impulse Response (FIR) Filtering Techniques}\label{sec:meth_sub4}
+
         \subsubsection{Window Filter}
             Plz write something here.
 
         \subsubsection{Parks-McClellan Filter}
-            Plz write something here.
+        Filters were initially designed using the Parks-McClellan algorithm. This algorithm finds the optimal Chebyshev FIR filter
+        using iteration. For each interference frequency identified, a Chebychev filter was created. All filters were then convolved
+        to the original data frequency responses. Ideally, this removed the interference at the given frequencies from the signal
+        without affecting the remaining frequency response of the signal.
 
 
 \section{Results}\label{sec:res}
+    \subsection{}
+    When the Genetic Algorithm was run using a Parks-McLellan filter, the algorithm was able to identify the optimal genes for 
+    maximum SNR. With the filter population size of $p_{size} = 20$, and a maximum number of iterations of $n = 1000$, a filtered 
+    output was produced. As seen in Figure \ref{Fig:result_1}, the interference frequencies found in the original signal have 
+    been removed from the frequency plot. When data from other files was tested, these were also successful without changing 
+    parameters. This proved the fitness function was robust as interference frequencies were identified in various conditions
+    without needing data training. 
+    
+    \begin{figure}[h!]
+        \centering  
+        \begin{subfigure}[b]{0.5\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{ECG_freq_spectrum.png}
+            \caption{Before filtering.}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.5\linewidth}
+            \graphicspath{{./wiki/}}
+            \includegraphics[width=\linewidth]{af_filtering_1kGen20Pop.png}
+            \caption{After filtering.}
+        \end{subfigure}
+        \caption{The filtered output of ECG signal 1, using $p_{size} = 20$, $n = 1000$.}
+        \label{Fig:result_1}
+    \end{figure}
+
+    When contrasting the number of iterations with the population frequency, it was found the maximum fitness consistently reached 
+    the maximum population fitness within 50 iterations. However, when the population size was decreased, a larger number of
+    iterations was required to reach optimum fitness. Using $p_{size} = 20$, $n = 50$ gave reasonable filter results with a
+    quick calculation time.
 
     \begin{figure}[h!]
         \centering
         \graphicspath{{./wiki/}}
-        \includegraphics[scale=0.8]{af_filtering_1kGen20Pop.png}
-        \caption{The filtered output of ECG signal 1, using $p_size = 20$, $n = 1000$.}
-        \label{Fig:result_1}
+        \includegraphics[scale=0.5]{1kGen20Pop.png}
+        \caption{The population fitness of ECG signal 1 through iterations, using $p_{size} = 20$, $n = 1000$.}
+        \label{Fig:result_2}
     \end{figure}
-    
-    When the Genetic Algorithm was run, the algorithm was able to identify the optimal filter frequencies for maximum SNR.
-    With the filter  population size of $p_size = 20$, and a maximum number of iterations of $n = 100$, a filtered output
-    was produced. As seen in Figure \ref{Fig:result_1}.
-    
-    \subsection{Creating a Population from DSP Singal Data}\label{sec:meth_sub1}
-    Plz write something here.
-    \subsection{Fitness Function}\label{sec:meth_sub2}
-    Plz write something here.
-    \subsection{Selecting Paranets for next GA Generations}\label{sec:meth_sub3}
-    Plz write something here.
-    \subsection{GA Operators}\label{sec:meth_sub4}
-    Plz write something here.
-        \subsubsection{Crossover}
-            Plz write something here.
-        \subsubsection{Mutation}
-            Plz write something here.
-        \subsubsection{Parents}
-            Plz write something here.
-    \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub5}
-        \subsubsection{Window Filter}
-            Plz write something here.
-        \subsubsection{Parks-McClellan Filter}
-            Plz write something here.
 
 \section{Discussion}\label{sec:dis}
-    Discussion.
+    The Genetic Algorithm has been effective at identifying and filtering the interference frequencies. These algorithms 
+    allow quick identification of required parameters without a comprehensive understanding of the system. Genetic Algorithms 
+    provide flexible, robust solutions to filter design. These can also be applied to with varying parameters without requiring
+    mathematical derivations. Unlike other iterative methods, Genetic Algorithms can span the entire solution space to find
+    optimal solutions, and when given appropriate parameters, the system will not misidentify suboptimal solutions in local
+    maximums. However, Genetic Algorithms require a fitness function to assess the quality of each potential solution quickly. 
+    This can be difficult in systems that require significant time for data gathering. GA's are also computationally intensive.
+    \\\\
+    The GA used to design filter coefficients emulates these properties. Once a population and fitness function was created,
+    and appropriate system parameters were identified, the algorithm was consistently able to return high-quality results. 
+    By inspection, these solutions identified the optimal results to high degree's of accuracy. However, the algorithm took
+    a reasonable time to produce results. This may not be practical in other applications. 
+    
     \subsection{Improvements}
         Plz write something in here.
 

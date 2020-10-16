@@ -126,6 +126,12 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
 OUTPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.aux
@@ -198,9 +204,14 @@ INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/Flowchart.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/Flowchart.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/Flowchart.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/ECG_freq_spectrum.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/ECG_freq_spectrum.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/af_filtering_1kGen20Pop.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/af_filtering_1kGen20Pop.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/af_filtering_1kGen20Pop.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/1kGen20Pop.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/1kGen20Pop.png
+INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/./wiki/1kGen20Pop.png
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.bbl
 INPUT /Users/hassan99/OneDrive - University of Canterbury/Desktop/Semester2_2020/ENEL420/Assignment_two/ENEL420-GA-DSP/doc/report.bbl
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
