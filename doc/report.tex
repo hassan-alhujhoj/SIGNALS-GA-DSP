@@ -122,8 +122,6 @@
         One method to filter these two frequencies was to reject them with either a window or Parks-McClellan filters.
 
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
-        ffs
-
         \begin{figure}[h!]
             \centering
             \graphicspath{{./wiki/}}
@@ -142,10 +140,19 @@
             local or global. Mutation can occur some occasionally but can randomly alters the value of a string
             position. A randomly generated bit can replace any bit of the chromosome bitstring mutating the original
             bit sequence of the parents \cite{Tang1996}.
-        \subsubsection{Parentss}
+        \subsubsection{Parents}
 
         \subsection{Applications}
-        
+        Since the emergence of Darwin's theory of natural selection, GA has become a powerful tool and used in various
+         applications.  The GAs are also known as optimisation algorithms. Optimisation algorithms have two major classes.
+         These two classes are classified as calculus-based techniques and enumerative techniques. Calculus-based
+         optimisation algorithms employ the gradient-directed searching mechanism to solve error surfaces or differentiable
+         surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
+         objective function. This can lead to obtaining a local optima instead of a global optima. Such use of objective
+         functions are common in signal processing \cite{Tang1996}.
+         \\\\
+         fjfj
+
 
 \section{Method}\label{sec:meth}
     To apply genetic algorithms to Digital Signal Processing, it was decided to use genetic algorithms to design a 
@@ -159,7 +166,7 @@
         \centering
         \graphicspath{{./wiki/}}
         \includegraphics[scale=1]{Flowchart.png}
-        \caption{Flowchart diagram of GA of ECG signals.}
+        \caption{Flowchart diagram of the use of GA to process ECG signals.}
         \label{Fig:flowchart}
     \end{figure}
 
@@ -209,12 +216,7 @@
 
 
 \section{Results}\label{sec:res}
-    \subsection{}
-    When the Genetic Algorithm was run using a Parks-McLellan filter, the algorithm was able to identify the optimal genes for 
-    maximum SNR. With the filter population size of $p_size = 20$, and a maximum number of iterations of $n = 1000$, a filtered 
-    output was produced. As seen in Figure \ref{Fig:result_1}, the interference frequencies found in the original signal have 
-    been removed from the frequency plot. When data from other files was tested, these were also successful without changing 
-    parameters. This proved the fitness function was robust, successfully identifying frequencies without needing specific tuning. 
+
     \begin{figure}[h!]
         \centering
         \graphicspath{{./wiki/}}
@@ -222,22 +224,36 @@
         \caption{The filtered output of ECG signal 1, using $p_size = 20$, $n = 1000$.}
         \label{Fig:result_1}
     \end{figure}
-    \\\\
-    When contrasting number of iterations with the population frequency, it was found the maximum fitness consistently reached 
-    the maximum population fitness within 50 iterations. However, when the population size was decreased, a larger number of
-    iterations was required to reach the optimum fitness. Using $p_size = 20$, $n = 50$ gave reasonable filter results with a
-    quick calculation time. 
 
-    \begin{figure}[h!]
-        \centering
-        \graphicspath{{./wiki/}}
-        \includegraphics[scale=0.5]{1kGen20Pop.png}
-        \caption{The population fitness of ECG signal 1 through iterations, using $p_size = 20$, $n = 1000$.}
-        \label{Fig:result_2}
-    \end{figure}
+    
+    When the Genetic Algorithm was run, the algorithm was able to identify the optimal filter frequencies for maximum SNR.
+    With the filter  population size of $p_size = 20$, and a maximum number of iterations of $n = 100$, a filtered output
+    was produced. As seen in Figure 1\ref{fig:result_1}
+    Describe\ae the results you've got. Don't give your opinion in here that goes in the Discussion.
+    Unless combine the Results and Discussion sections \begin{equation} V = IR\end{equation}
+    
+    \subsection{Creating a Population from DSP Singal Data}\label{sec:meth_sub1}
+    Plz write something here.
+    \subsection{Fitness Function}\label{sec:meth_sub2}
+    Plz write something here.
+    \subsection{Selecting Paranets for next GA Generations}\label{sec:meth_sub3}
+    Plz write something here.
+    \subsection{GA Operators}\label{sec:meth_sub4}
+    Plz write something here.
+        \subsubsection{Crossover}
+            Plz write something here.
+        \subsubsection{Mutation}
+            Plz write something here.
+        \subsubsection{Parents}
+            Plz write something here.
+    \subsection{Filtering of ECG Signal Using FIR Filters}\label{sec:meth_sub5}
+        \subsubsection{Window Filter}
+            Plz write something here.
+        \subsubsection{Parks-McClellan Filter}
+            Plz write something here.
 
 \section{Discussion}\label{sec:dis}
-    The Genetic Algorithm has been effective at identifying and filtering the interference frequencies from the data.
+    Discussion.
 
 \section{Conclusion}\label{sec:conc}
     Reinstate the stuff you've talked about in the report. Don't introduce new materials in here.
@@ -249,9 +265,6 @@
 \renewcommand{\cite}{\citep}
 \bibliography{ref}
 \pagebreak
-
-\section{Appendices}
-    \subsection{Appendix A}
 
 \end{document}
 
