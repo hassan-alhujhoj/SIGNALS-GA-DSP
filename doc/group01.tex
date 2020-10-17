@@ -55,9 +55,11 @@
 
 \date{\small\today}
 \begin{document}
+\clearpage
 \maketitle
+\pagenumbering{roman}
 
-\vspace{2cm}
+
 \begin{abstract}
     Genetic Algorithms (GA's) are an evolutionary algorithm, evolving a population for an optimised 
     solution. This relies on Darwins's Theory of Natural Selection, where he claimed that natural variation, which exists in
@@ -65,15 +67,14 @@
     formulate this theory. This allows its application to areas in Digital Signal Processing such as 
     Finite Impulse Response Filters, investigated throughout this report. A genetic algorithm was successfully designed to remove
     interference signals from an electrocardiogram (ECG) data signal without data training.
-    
 \end{abstract}
 
 \pagebreak
-\pagenumbering{roman}
+\renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
-\pagenumbering{arabic}
 \pagebreak
 
+\pagenumbering{arabic}
 \section{Introduction}\label{sec:intro}
     Genetic Algorithms (GA) are inspired by the mechanism of natural selection where the strongest and fittest
     individuals would likely be the winners in a competing environment. Genetic Algorithm is used as a direct 
@@ -104,7 +105,7 @@
         \centering
         \graphicspath{{./wiki/}}
         \includegraphics[scale=0.7]{crossover.png}
-        \caption{Interference frequencies present in the ECG signal.}
+        \caption{Example of one-point crossover. Adapted from \cite{Tang1996}, refer to Figure 4.}
         \label{Fig:crossover}
     \end{figure}
 
@@ -131,7 +132,8 @@
 
     \subsection{Genetic Algorithms}\label{sec:bg_sub2}
     Since the emergence of Darwin's theory of natural selection, GA has become a powerful tool and used in various
-    applications.  The GAs are also known as optimisation algorithms. Optimisation algorithms have two major classes.
+    applications. The basis principles of GA were first proposed by Holand in 1975 \cite{Man1997}. The GAs are also 
+    known as optimisation algorithms. Optimisation algorithms have two major classes.
     These two classes are classified as calculus-based techniques and enumerative techniques. Calculus-based
     optimisation algorithms employ the gradient-directed searching mechanism to solve error surfaces or differentiable
     surfaces of an objective function. A common misuse of an objective function can occur with an ill-defined or multimodal
@@ -189,8 +191,19 @@
         In \cite{Chen2017}, GA were used to control a BLDC motor with PI speed controller that is then processed by 
         a Digital Signal Processor (DSP). In a real control system, the processing time in a cycle might be token long
         when the data communication is processed. The implementation of a GA-PI control design improves the performance of
-        the PI control of the BLDC motor according to \cite{Chen2017}. In this study, the BLDC motor fitness is evaluated
-        based on the transfer function of the motor which is then used to evaluate the chromosomes population 
+        the PI control of the BLDC motor . The BLDC motor fitness is evaluated based on the BLDC motor closed-loop control 
+        system which is then used to evaluate the chromosomes population. The results of this designed showed step responses
+        of GA-PI that are better than the standard PI controller response plots \cite{Chen2017}.
+        \\\\
+        Another application of GA can be found in antenna array beamforming or thinned antenna arrays (TAA) for software-defined
+        radio applications. GA can be a desired choice to solve the problem of unsymmetric linea TAAs to produce the desired
+        radiation pattern \cite{Cao2012}. Genetic Algorithms, furthermore, have been used find a solution to Non-deterministic Polynomial
+        complete (NP-complete) problems of multi-core scheduling for audio DSP algorithms \cite{Amphlett1996}. NP-complete problems are
+        any of a class of computational problems that no efficient solution or algorithm has been found. Many computer science problems 
+        belong to this complex class. Examples such as traveling-salesman, satisfiability, and graph-covering problems all fall into that 
+        class \cite{Encyc2020}. It should be note that the results from the performance of GA-based multi-processor scheduling compares
+        favourably with exiting heuristic methods since they out-perform all other existing techniques for most applications \cite{Amphlett1996}.
+ 
 
 
 \section{Method}\label{sec:meth}
@@ -206,7 +219,7 @@
     As the number of generations increases, the population fitness increases. Once $N_{generations}$ have been reached, the
     optimal filter coefficients are returned. 
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \graphicspath{{./wiki/}}
         \includegraphics[scale=0.8]{Flowchart.png}
@@ -267,8 +280,13 @@
     \\\\
     In the time domain, (Figure \ref{Fig:result_2}) the interference frequencies introduced noise, obstructing the true waveform. 
     When the frequencies are removed, the signal is much clearer, resulting in more useful information due to the filtering. 
-    
-    \begin{figure}[h!]
+    \\\\
+    When varying the number of generations with the population size, the maximum fitness was consistently reached within 5 
+    iterations (Figure \ref{Fig:result_2}). However, when the population size was decreased, a larger number of
+    iterations was required to reach optimum fitness. Using $p_{size} = 20$, $n = 50$ gave reasonable filter results with a
+    small execution time \cite[]{Garip2018}.
+
+    \begin{figure}[H]
         \centering  
         \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
@@ -282,7 +300,7 @@
         \label{Fig:result_1}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering  
         \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
@@ -296,11 +314,6 @@
         seen above with parameters $p_{size} = 20$, $n = 1000$.}
         \label{Fig:result_2}
     \end{figure}
-
-    When varying the number of generations with the population size, the maximum fitness was consistently reached within 5 
-    iterations (Figure \ref{Fig:result_2}). However, when the population size was decreased, a larger number of
-    iterations was required to reach optimum fitness. Using $p_{size} = 20$, $n = 50$ gave reasonable filter results with a
-    small execution time \cite[]{Garip2018}.
 
     \begin{figure}[h!]
         \centering
@@ -326,11 +339,11 @@
 
     \begin{figure}[h!]
         \centering  
-        \begin{subfigure}[b]{0.4\linewidth}
+        \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
             \includegraphics[width=\linewidth]{GenPerPopSize.png}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.4\linewidth}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.5\linewidth}
             \graphicspath{{./wiki/}}
             \includegraphics[width=\linewidth]{ExPerPopSize.png}
         \end{subfigure}
@@ -370,7 +383,6 @@
     Genetic Algorithms do not require complex understandings of the dynamics of a system, and are able to span the entire
     genetic range, which prevents genetic algorithms finding suboptimal solutions given appropriate input parameters. However, 
     genetic algorithms are computationally expensive, which can limit their applications.  
-
     
 
 \pagebreak

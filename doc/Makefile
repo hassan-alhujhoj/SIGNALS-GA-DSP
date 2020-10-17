@@ -1,4 +1,4 @@
-PDFFILES = report.pdf
+PDFFILES = group01.pdf
 
 all: $(PDFFILES) 
 
@@ -11,5 +11,5 @@ all: $(PDFFILES)
 	pdflatex $*
 
 clean:
-	-rm *.pdf *.aux *.dvi *.log *~ *.bbl *.blg
+	-rm *.pdf *.aux *.dvi *.log *~ *.bbl *.blg *.toc *.fls
 
