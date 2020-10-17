@@ -1,17 +1,24 @@
 # ENEL420 - Genetic Algorithm for Digital Signal Processing
-<img src="doc/wiki/bf_filtering_10kGen.png" alt="fig2" width="1200"/>
-<img src="doc/wiki/10kGen.png" alt="fig1" width="1200"/>
-<img src="doc/wiki/af_filtering_100Gen.png" alt="fig3" width="1200"/>
-
 ## Description
-This is a code that uses the concept of Darwin's theory of natural selection. The code uses Genetic Algorithms (GA) 
-to filter noisy ECG singals that has two fundamental interference frequencies using the fitness of the generated frequency
-population. The ECG is filtered by either an FIR or IIR filter. A Signal to Noise Ratio (SNR) is then obtained to determine the fitness of the population.
+Genetic Algorithms (GA’s) are an evolutionary algorithm,  evolving a population for an op-timised solution.  
+This  relies on Darwins’s Theory  of Natural Selection,  where he claimed thatnatural variation, which exists 
+in all populations, improves the gene pool, forming the basis forevolution.  Genetic Algorithms mathematically 
+formulate this theory.  This allows its applicationto areas in Digital Signal Processing such as Finite Impulse 
+Response Filters, investigated through-out this report.  A genetic algorithm was successfully designed to remove 
+interference signals froman electrocardiogram (ECG) data signal without data training.
 
-### GA Cycle
-<img src="doc/wiki/Flowchart.png" alt="fig4" width="300" align="center"/>
+## Filtered Results
+### Frequency Domain Results
+<img src="doc/wiki/ECG_freq_spectrum.png" alt="main1" width="400" align="left"/>
+<img src="doc/wiki/af_filtering_1kGen20Pop.png" alt="main2" width="400" align="right"/>
+### Frequency Domain Results
+<img src="doc/wiki/TDU.png" alt="main3" width="400" align="left"/>
+<img src="doc/wiki/TDF.png" alt="main4" width="400" align="right"/>
 
-### Rejection Frequencies
+### Genetic Algorithms Flowchart Diagram
+<img src="doc/wiki/Flowchart.png" alt="main5" width="300" align="center"/>
+
+### Interference Frequencies in ECG Signals
 - `30Hz <= f <= 100Hz`
 
 ### GA Operators
@@ -20,7 +27,7 @@ population. The ECG is filtered by either an FIR or IIR filter. A Signal to Nois
 
 ### FIR Filters
 1. Window Filter  
-2.  Parks-McClellan Filter  
+2. Parks-McClellan Filter  
 3. Frequency Selection Filter  
 
 ### IIR Filter
