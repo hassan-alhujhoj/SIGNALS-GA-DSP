@@ -10,10 +10,10 @@ interference signals froman electrocardiogram (ECG) data signal without data tra
 ## Filtered Results
 ### Frequency Domain Results
 <img src="doc/wiki/ECG_freq_spectrum.png" alt="main1" width="400" align="left"/>
-<img src="doc/wiki/af_filtering_1kGen20Pop.png" alt="main2" width="400" align="right"/>
+<img src="doc/wiki/af_filtering_1kGen20Pop.png" alt="main2" width="400"/>
 ### Frequency Domain Results
 <img src="doc/wiki/TDU.png" alt="main3" width="400" align="left"/>
-<img src="doc/wiki/TDF.png" alt="main4" width="400" align="right"/>
+<img src="doc/wiki/TDF.png" alt="main4" width="400"/>
 
 ### Genetic Algorithms Flowchart Diagram
 <img src="doc/wiki/Flowchart.png" alt="main5" width="300" align="center"/>
