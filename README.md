@@ -35,3 +35,6 @@ interference signals froman electrocardiogram (ECG) data signal without data tra
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
 * [Luke Trenberth](https://github.com/ltr28)
+
+## License
+Licensed under [MIT license](LICENSE)
