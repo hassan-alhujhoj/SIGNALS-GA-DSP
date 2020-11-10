@@ -1,4 +1,4 @@
-# Signals - Genetic Algorithm for Digital Signal Processing
+# Advanced Signals - Genetic Algorithm for Digital Signal Processing
 ## Description
 Genetic Algorithms (GA’s) are an evolutionary algorithm,  evolving a population for an op-timised solution.  
 This  relies on Darwins’s Theory  of Natural Selection,  where he claimed thatnatural variation, which exists 
